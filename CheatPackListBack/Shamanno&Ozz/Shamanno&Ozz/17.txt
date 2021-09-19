@@ -1,0 +1,7 @@
+KillUnit
+call
+call
+call
+call
+GetRandomReal
+GetRandomReal

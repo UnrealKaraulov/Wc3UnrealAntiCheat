@@ -1,0 +1,9 @@
+integer
+set
+loop
+set
+UnitItemInSlot
+set
+exitwhen
+endloop
+call

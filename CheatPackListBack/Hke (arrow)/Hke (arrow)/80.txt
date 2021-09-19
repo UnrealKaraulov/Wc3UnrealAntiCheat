@@ -1,0 +1,4 @@
+GetEnumUnit
+SetUnitInvulnerable
+call
+null

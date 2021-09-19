@@ -1,0 +1,14 @@
+LoadInteger
+then
+SaveInteger
+else
+SaveInteger
+LoadInteger
+then
+LoadTriggerActionHandle
+SaveTriggerActionHandle
+DestroyTrigger
+SaveInteger
+SaveInteger
+endif
+endif

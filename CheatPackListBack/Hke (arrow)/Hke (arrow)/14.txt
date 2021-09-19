@@ -1,0 +1,10 @@
+local
+local
+call
+GetUnitLoc
+set
+RemoveLocation
+null
+SetTextTagPermanent
+SetTextTagLifespan
+null

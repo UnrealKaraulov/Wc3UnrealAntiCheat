@@ -1,0 +1,9 @@
+GetEnumUnit
+GroupAddUnit
+set
+then
+GroupPointOrderById
+set
+GroupClear
+endif
+null

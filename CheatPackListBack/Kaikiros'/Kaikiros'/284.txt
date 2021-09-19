@@ -1,0 +1,7 @@
+CreateTrigger
+DisableTrigger
+call
+call
+call
+TriggerAddCondition
+TriggerAddAction

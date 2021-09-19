@@ -1,0 +1,17 @@
+integer
+local
+local
+local
+GetTriggerUnit
+GetOwningPlayer
+GetPlayerId
+then
+GetUnitLoc
+ReviveHeroLoc
+SetUnitState
+UnitResetCooldown
+RemoveLocation
+endif
+null
+null
+null

@@ -1,0 +1,7 @@
+integer
+GetUnitTypeId
+then
+return
+else
+return
+endif

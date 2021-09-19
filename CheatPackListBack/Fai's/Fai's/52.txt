@@ -1,0 +1,4 @@
+GetTriggerPlayer
+GetPlayerId
+set
+null

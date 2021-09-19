@@ -1,0 +1,9 @@
+GetTriggerPlayer
+GetPlayerId
+CreateTimer
+GetHandleId
+GetTriggeringTrigger
+ConvertPlayerState
+SaveInteger
+TimerStart
+GetTriggeringTrigger

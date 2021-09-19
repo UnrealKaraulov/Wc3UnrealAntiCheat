@@ -1,0 +1,9 @@
+then
+DialogCreate
+CreateTrigger
+TriggerRegisterDialogEvent
+call
+call
+endif
+DialogClear
+DialogSetMessage

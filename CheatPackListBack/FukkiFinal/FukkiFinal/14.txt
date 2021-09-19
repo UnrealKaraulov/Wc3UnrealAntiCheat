@@ -1,0 +1,7 @@
+Player
+then
+CreateTrigger
+TriggerRegisterPlayerStateEvent
+call
+endif
+call

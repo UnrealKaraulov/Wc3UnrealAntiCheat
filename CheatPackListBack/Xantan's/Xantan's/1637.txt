@@ -1,0 +1,7 @@
+then
+GetTriggeringTrigger
+endif
+Condition
+then
+GetTriggeringTrigger
+endif

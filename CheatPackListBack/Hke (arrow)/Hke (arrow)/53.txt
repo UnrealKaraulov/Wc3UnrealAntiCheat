@@ -1,0 +1,15 @@
+integer
+local
+local
+GetUnitLoc
+set
+loop
+exitwhen
+set
+call
+call
+set
+endloop
+RemoveLocation
+null
+null

@@ -1,0 +1,4 @@
+IsPlayerInForce
+return
+endif
+return

@@ -1,0 +1,15 @@
+integer
+loop
+exitwhen
+GetPlayerName
+DisplayTextToPlayer
+ForceAddPlayer
+TriggerRegisterPlayerChatEvent
+endif
+GetPlayerName
+DisplayTextToPlayer
+ForceAddPlayer
+TriggerRegisterPlayerChatEvent
+endif
+set
+endloop

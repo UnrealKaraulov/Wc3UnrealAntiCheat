@@ -1,0 +1,11 @@
+GetHeroXP
+boolean
+then
+then
+AddHeroXP
+else
+AddHeroXP
+endif
+else
+AddHeroXP
+endif

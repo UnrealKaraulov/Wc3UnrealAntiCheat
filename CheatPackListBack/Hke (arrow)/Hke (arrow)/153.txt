@@ -1,0 +1,12 @@
+GetAttacker
+GetEnumUnit
+GetOwningPlayer
+GetOwningPlayer
+IsUnitAlly
+else
+call
+endif
+null
+null
+null
+null

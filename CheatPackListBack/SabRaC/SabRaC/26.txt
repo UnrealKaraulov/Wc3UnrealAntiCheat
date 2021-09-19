@@ -1,0 +1,13 @@
+GetTriggerUnit
+GetHandleId
+LoadReal
+GetUnitState
+local
+GetEventDamage
+SaveReal
+SaveUnitHandle
+CreateTimer
+TimerStart
+else
+GetEventDamage
+endif

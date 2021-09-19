@@ -1,0 +1,16 @@
+local
+trigger
+then
+else
+GetGameSpeed
+IsMapFlagSet
+call
+SetGameSpeed
+call
+CreateTrigger
+CreateTimer
+false
+set
+TriggerAddAction
+TriggerRegisterTimerExpireEvent
+endif

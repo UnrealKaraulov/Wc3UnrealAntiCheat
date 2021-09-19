@@ -1,0 +1,13 @@
+GetTriggerUnit
+GetAttacker
+GetSpellTargetUnit
+GetOwningPlayer
+GetOwningPlayer
+GetOwningPlayer
+then
+null
+then
+null
+then
+null
+endif

@@ -1,0 +1,17 @@
+GetTriggerPlayer
+GetUnitLoc
+CreateTrigger
+CreateUnitAtLoc
+UnitAddAbility
+UnitAddAbility
+ShowUnit
+SetUnitUseFood
+SetUnitScale
+IssuePointOrderByIdLoc
+TriggerRegisterUnitEvent
+TriggerRegisterUnitEvent
+TriggerAddAction
+RemoveLocation
+null
+null
+null

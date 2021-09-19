@@ -1,0 +1,11 @@
+integer
+local
+loop
+exitwhen
+set
+Player
+GetWidgetLife
+endif
+set
+endloop
+null

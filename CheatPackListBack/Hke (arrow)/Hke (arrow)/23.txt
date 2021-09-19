@@ -1,0 +1,12 @@
+local
+CreateUnitAtLoc
+then
+SetUnitUseFood
+endif
+then
+SetUnitUserData
+endif
+then
+UnitApplyTimedLife
+endif
+null

@@ -1,0 +1,6 @@
+integer
+loop
+DisplayTextToPlayer
+set
+exitwhen
+endloop

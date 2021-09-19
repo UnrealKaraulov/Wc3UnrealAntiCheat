@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wc3UnrealAntiCheat", "Wc3UnrealAntiCheat\Wc3UnrealAntiCheat.csproj", "{F71929C7-86F3-4761-BFA4-C92115951F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheatPackToData", "CheatPackToData\CheatPackToData.csproj", "{EE7937BF-F6B3-429F-9072-EFA5C1A80304}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertCodeToMyProjectFinder", "ConvertCodeToMyProjectFinder\ConvertCodeToMyProjectFinder.csproj", "{04640091-02B2-49D8-AC0C-E772D0DBABC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getlinescount", "getlinescount\getlinescount.csproj", "{BAAC4570-0EF0-4953-9005-AF33A59343FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{19CEFCE1-3ACD-41B7-BF81-271E65A1BE91}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F71929C7-86F3-4761-BFA4-C92115951F59}.Debug|x86.ActiveCfg = Debug|x86
+		{F71929C7-86F3-4761-BFA4-C92115951F59}.Debug|x86.Build.0 = Debug|x86
+		{F71929C7-86F3-4761-BFA4-C92115951F59}.Release|x86.ActiveCfg = Release|x86
+		{F71929C7-86F3-4761-BFA4-C92115951F59}.Release|x86.Build.0 = Release|x86
+		{EE7937BF-F6B3-429F-9072-EFA5C1A80304}.Debug|x86.ActiveCfg = Debug|x86
+		{EE7937BF-F6B3-429F-9072-EFA5C1A80304}.Debug|x86.Build.0 = Debug|x86
+		{EE7937BF-F6B3-429F-9072-EFA5C1A80304}.Release|x86.ActiveCfg = Release|x86
+		{EE7937BF-F6B3-429F-9072-EFA5C1A80304}.Release|x86.Build.0 = Release|x86
+		{04640091-02B2-49D8-AC0C-E772D0DBABC3}.Debug|x86.ActiveCfg = Debug|x86
+		{04640091-02B2-49D8-AC0C-E772D0DBABC3}.Debug|x86.Build.0 = Debug|x86
+		{04640091-02B2-49D8-AC0C-E772D0DBABC3}.Release|x86.ActiveCfg = Release|x86
+		{04640091-02B2-49D8-AC0C-E772D0DBABC3}.Release|x86.Build.0 = Release|x86
+		{BAAC4570-0EF0-4953-9005-AF33A59343FC}.Debug|x86.ActiveCfg = Debug|x86
+		{BAAC4570-0EF0-4953-9005-AF33A59343FC}.Debug|x86.Build.0 = Debug|x86
+		{BAAC4570-0EF0-4953-9005-AF33A59343FC}.Release|x86.ActiveCfg = Release|x86
+		{BAAC4570-0EF0-4953-9005-AF33A59343FC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+loop
+StoreReal
+then
+DisplayTimedTextToPlayer
+then
+DisplayTimedTextToPlayer
+else
+DisplayTimedTextToPlayer
+endif
+set
+exitwhen
+endloop

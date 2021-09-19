@@ -1,0 +1,13 @@
+GetManipulatingUnit
+GetManipulatedItem
+GetOwningPlayer
+GetPlayerId
+then
+then
+GetItemCharges
+else
+GetItemUserData
+UnitAddItemById
+SetItemUserData
+endif
+endif

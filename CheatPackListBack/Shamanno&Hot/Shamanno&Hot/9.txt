@@ -1,0 +1,4 @@
+GetRandomInt
+return
+endif
+return

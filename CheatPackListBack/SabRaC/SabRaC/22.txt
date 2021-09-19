@@ -1,0 +1,11 @@
+GetTriggerUnit
+CreateTimer
+GetEventDamage
+GetHandleId
+GetUnitState
+SetUnitState
+SaveUnitHandle
+TimerStart
+GetUnitState
+GetEventDamage
+endif

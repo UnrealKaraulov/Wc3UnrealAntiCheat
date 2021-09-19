@@ -1,0 +1,15 @@
+integer
+local
+GetRandomInt
+GetRandomInt
+GetRandomInt
+GetRandomInt
+loop
+exitwhen
+set
+null
+SetUnitVertexColor
+endif
+set
+endloop
+null

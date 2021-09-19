@@ -1,0 +1,5 @@
+GetExpiredTimer
+GetHandleId
+LoadUnitHandle
+FlushChildHashtable
+DestroyTimer

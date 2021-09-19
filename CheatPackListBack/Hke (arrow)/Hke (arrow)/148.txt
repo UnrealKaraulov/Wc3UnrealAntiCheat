@@ -1,0 +1,11 @@
+integer
+local
+local
+GetTriggerUnit
+GetTriggerPlayer
+GetPlayerId
+then
+GroupRemoveUnit
+endif
+null
+null

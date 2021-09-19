@@ -1,0 +1,14 @@
+local
+integer
+integer
+GetUnitLoc
+GetUnitTypeId
+set
+loop
+exitwhen
+call
+set
+endloop
+RemoveLocation
+GetPlayerId
+null

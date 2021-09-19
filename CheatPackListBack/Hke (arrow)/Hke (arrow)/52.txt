@@ -1,0 +1,10 @@
+integer
+local
+set
+loop
+exitwhen
+set
+call
+set
+endloop
+null

@@ -1,0 +1,6 @@
+integer
+CreateTrigger
+TriggerRegisterPlayerChatEvent
+TriggerRegisterPlayerChatEvent
+TriggerAddCondition
+TriggerAddAction

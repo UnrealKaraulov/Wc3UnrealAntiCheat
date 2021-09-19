@@ -1,0 +1,5 @@
+then
+SetPlayerTechMaxAllowed
+else
+SetPlayerTechMaxAllowed
+endif

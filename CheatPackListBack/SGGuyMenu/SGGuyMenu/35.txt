@@ -1,0 +1,3 @@
+CreateTrigger
+TriggerRegisterPlayerEvent
+TriggerAddCondition

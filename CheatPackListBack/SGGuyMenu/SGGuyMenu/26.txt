@@ -1,0 +1,12 @@
+integer
+boolean
+loop
+exitwhen
+GetClickedButton
+SetPlayerHandicapXP
+endif
+set
+endloop
+set
+set
+return

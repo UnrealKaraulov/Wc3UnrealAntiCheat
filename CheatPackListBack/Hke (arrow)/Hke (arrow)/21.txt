@@ -1,0 +1,8 @@
+local
+GetPlayerId
+set
+ForGroup
+GetPlayerId
+DestroyGroup
+null
+endif

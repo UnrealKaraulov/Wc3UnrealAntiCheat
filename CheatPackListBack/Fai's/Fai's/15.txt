@@ -1,0 +1,11 @@
+GetTriggerUnit
+local
+local
+boolean
+then
+SetUnitState
+endif
+null
+null
+null
+return

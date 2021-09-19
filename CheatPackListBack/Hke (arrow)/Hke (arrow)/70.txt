@@ -1,0 +1,8 @@
+local
+GetItemTypeId
+then
+return
+else
+null
+return
+endif

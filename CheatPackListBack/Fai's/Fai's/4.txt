@@ -1,0 +1,7 @@
+integer
+boolean
+loop
+TriggerSleepAction
+set
+exitwhen
+endloop

@@ -1,0 +1,7 @@
+then
+set
+ForGroup
+else
+SetUnitInvulnerable
+call
+endif

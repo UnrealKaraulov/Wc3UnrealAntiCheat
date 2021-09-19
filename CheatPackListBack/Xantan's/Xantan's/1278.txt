@@ -1,0 +1,4 @@
+GetTriggerPlayer
+GetEventPlayerChatString
+GetEventPlayerChatString
+GetTriggeringTrigger

@@ -1,0 +1,17 @@
+integer
+integer
+local
+GetPlayerId
+SubString
+SubString
+set
+StringLength
+endif
+loop
+SubString
+set
+ExecuteFunc
+exitwhen
+set
+set
+endloop

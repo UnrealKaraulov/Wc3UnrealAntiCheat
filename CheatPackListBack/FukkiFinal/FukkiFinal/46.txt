@@ -1,0 +1,9 @@
+GetEnumUnit
+trigger
+IsUnitInGroup
+GroupAddUnit
+CreateTrigger
+TriggerRegisterUnitEvent
+TriggerRegisterUnitEvent
+TriggerAddAction
+endif

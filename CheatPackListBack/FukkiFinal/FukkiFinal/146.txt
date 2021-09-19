@@ -1,0 +1,15 @@
+GetTriggerPlayer
+GetPlayerId
+GetClickedButton
+integer
+then
+ExecuteFunc
+then
+ExecuteFunc
+then
+ExecuteFunc
+then
+ExecuteFunc
+then
+call
+endif

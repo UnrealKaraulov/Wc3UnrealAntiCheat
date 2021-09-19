@@ -1,0 +1,7 @@
+GetTriggeringTrigger
+GetExpiredTimer
+DestroyTrigger
+DestroyTimer
+false
+null
+null

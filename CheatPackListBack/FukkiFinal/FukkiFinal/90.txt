@@ -1,0 +1,12 @@
+GetEventPlayerChatString
+GetTriggerPlayer
+GetPlayerName
+GetPlayerId
+integer
+loop
+LoadBoolean
+DisplayTimedTextToPlayer
+endif
+set
+exitwhen
+endloop

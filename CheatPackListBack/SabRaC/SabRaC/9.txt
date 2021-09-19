@@ -1,0 +1,9 @@
+GetTriggerPlayer
+GetPlayerId
+GetPlayerState
+then
+GetTriggeringTrigger
+SetPlayerState
+GetTriggeringTrigger
+endif
+GetPlayerState

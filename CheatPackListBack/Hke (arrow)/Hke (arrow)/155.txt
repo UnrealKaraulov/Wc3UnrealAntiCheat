@@ -1,0 +1,13 @@
+integer
+loop
+exitwhen
+GetPlayerName
+false
+call
+true
+Player
+Player
+endif
+endif
+set
+endloop

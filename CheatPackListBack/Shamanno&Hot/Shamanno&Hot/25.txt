@@ -1,0 +1,4 @@
+GetOwningPlayer
+return
+endif
+return

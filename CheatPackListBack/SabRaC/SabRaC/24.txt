@@ -1,0 +1,7 @@
+GetTriggerUnit
+GetHandleId
+LoadReal
+CreateTimer
+GetUnitState
+SaveUnitHandle
+TimerStart

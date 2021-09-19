@@ -1,0 +1,6 @@
+GetTriggerPlayer
+GetTrainedUnitType
+GetTriggerUnit
+CreateUnitAtLoc
+null
+null

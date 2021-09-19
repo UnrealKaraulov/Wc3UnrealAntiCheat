@@ -1,0 +1,5 @@
+LoadBoolean
+DisplayTimedTextToPlayer
+LoadInteger
+endif
+return

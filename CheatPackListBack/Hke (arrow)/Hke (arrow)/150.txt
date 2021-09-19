@@ -1,0 +1,15 @@
+integer
+local
+local
+local
+GetTriggerPlayer
+GetPlayerId
+GetIssuedOrderId
+GetTriggerUnit
+GetOrderPointLoc
+SetUnitPositionLoc
+RemoveLocation
+endif
+null
+null
+null

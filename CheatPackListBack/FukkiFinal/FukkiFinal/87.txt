@@ -1,0 +1,9 @@
+GetIssuedOrderId
+GetTriggerUnit
+GetOwningPlayer
+GetPlayerId
+then
+UnitResetCooldown
+then
+UnitResetCooldown
+endif

@@ -1,0 +1,8 @@
+then
+GetTriggerPlayer
+TriggerSleepAction
+GetTriggerPlayer
+TriggerSleepAction
+GetTriggerPlayer
+else
+endif

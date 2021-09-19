@@ -1,0 +1,5 @@
+then
+SetUnitMoveSpeed
+else
+GetUnitDefaultMoveSpeed
+endif

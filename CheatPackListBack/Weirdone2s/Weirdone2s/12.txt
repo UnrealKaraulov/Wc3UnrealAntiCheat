@@ -1,0 +1,4 @@
+GetTriggerUnit
+GetTriggerPlayer
+GetWidgetLife
+null

@@ -1,0 +1,5 @@
+GetLocalPlayer
+ExecuteFunc
+null
+null
+endif

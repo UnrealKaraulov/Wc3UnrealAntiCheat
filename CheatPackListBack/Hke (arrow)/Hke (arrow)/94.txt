@@ -1,0 +1,7 @@
+GetTriggerUnit
+GetTriggeringTrigger
+RemoveUnit
+DisableTrigger
+DestroyTrigger
+null
+null

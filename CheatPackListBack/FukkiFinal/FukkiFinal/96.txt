@@ -1,0 +1,15 @@
+GetTriggerPlayer
+GetPlayerId
+integer
+integer
+call
+loop
+LoadInteger
+then
+GetPlayerName
+endif
+set
+exitwhen
+endloop
+call
+DialogDisplay

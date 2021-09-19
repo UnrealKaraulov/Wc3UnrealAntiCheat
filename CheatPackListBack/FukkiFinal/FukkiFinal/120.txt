@@ -1,0 +1,6 @@
+loop
+FirstOfGroup
+ForGroup
+TriggerSleepAction
+endloop
+SaveBoolean

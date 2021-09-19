@@ -1,0 +1,13 @@
+GetTriggerPlayer
+then
+DisableTrigger
+TriggerRemoveCondition
+false
+else
+CreateTrigger
+TriggerAddCondition
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+true
+endif
+call

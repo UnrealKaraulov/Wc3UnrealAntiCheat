@@ -1,0 +1,6 @@
+integer
+loop
+SubString
+StringLength
+set
+endloop

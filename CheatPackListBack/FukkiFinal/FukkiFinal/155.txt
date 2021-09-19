@@ -1,0 +1,2 @@
+SaveBoolean
+SaveStr

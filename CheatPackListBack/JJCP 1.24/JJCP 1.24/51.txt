@@ -1,0 +1,7 @@
+CreateFogModifierRect
+FogModifierStart
+false
+FogModifierStop
+DestroyFogModifier
+null
+null

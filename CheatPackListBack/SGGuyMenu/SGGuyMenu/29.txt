@@ -1,0 +1,16 @@
+integer
+boolean
+GetClickedButton
+set
+set
+return
+endif
+loop
+exitwhen
+GetClickedButton
+GetTriggerPlayer
+endif
+set
+endloop
+call
+return

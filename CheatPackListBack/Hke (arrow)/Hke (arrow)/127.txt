@@ -1,0 +1,13 @@
+local
+trigger
+InitGameCache
+set
+then
+CreateTimer
+CreateTrigger
+TriggerAddAction
+TriggerRegisterTimerExpireEvent
+TimerStart
+null
+null
+endif

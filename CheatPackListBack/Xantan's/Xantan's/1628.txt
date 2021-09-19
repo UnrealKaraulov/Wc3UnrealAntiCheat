@@ -1,0 +1,8 @@
+false
+GetTriggerUnit
+then
+return
+endif
+GetTriggerPlayer
+GetTriggerPlayer
+set

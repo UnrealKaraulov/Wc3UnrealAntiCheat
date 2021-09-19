@@ -1,0 +1,6 @@
+then
+GetEnumPlayer
+else
+call
+call
+endif

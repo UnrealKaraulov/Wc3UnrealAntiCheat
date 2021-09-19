@@ -1,0 +1,13 @@
+GetRandomReal
+call
+call
+call
+then
+call
+else
+then
+call
+else
+call
+endif
+endif

@@ -1,0 +1,13 @@
+GetTriggerPlayer
+CreateTrigger
+integer
+LoadInteger
+SaveInteger
+loop
+exitwhen
+TriggerRegisterPlayerChatEvent
+set
+endloop
+endif
+TriggerAddAction
+ExecuteFunc

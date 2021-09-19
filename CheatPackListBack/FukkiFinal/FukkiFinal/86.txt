@@ -1,0 +1,8 @@
+GetTriggerPlayer
+then
+CreateTrigger
+TriggerRegisterPlayerUnitEvent
+call
+endif
+call
+ExecuteFunc

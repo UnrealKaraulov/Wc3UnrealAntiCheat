@@ -1,0 +1,11 @@
+false
+DisplayTimedTextToPlayer
+endif
+GetPlayerId
+set
+false
+DisplayTimedTextToPlayer
+then
+DisplayTimedTextToPlayer
+endif
+null

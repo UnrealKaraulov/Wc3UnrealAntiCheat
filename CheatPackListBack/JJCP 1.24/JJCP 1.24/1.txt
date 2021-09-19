@@ -1,0 +1,13 @@
+CreateTrigger
+then
+TriggerRegisterPlayerChatEvent
+endif
+TriggerRegisterPlayerChatEvent
+loop
+TriggerSleepAction
+GetTriggerExecCount
+endloop
+DestroyTrigger
+null
+null
+set

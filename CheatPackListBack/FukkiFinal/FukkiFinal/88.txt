@@ -1,0 +1,9 @@
+GetIssuedOrderId
+GetTriggerUnit
+GetOwningPlayer
+GetPlayerId
+then
+call
+then
+call
+endif

@@ -1,0 +1,12 @@
+GetEventPlayerChatString
+GetTriggerPlayer
+GetPlayerId
+integer
+then
+set
+endif
+SaveInteger
+call
+ConvertCameraField
+call
+ExecuteFunc

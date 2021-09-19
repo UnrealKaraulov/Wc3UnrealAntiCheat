@@ -1,0 +1,6 @@
+GetUnitLoc
+GetOwningPlayer
+call
+RemoveLocation
+null
+null

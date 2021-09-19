@@ -1,0 +1,13 @@
+local
+local
+GetUnitLoc
+GetUnitLoc
+SetUnitPositionLoc
+then
+SetUnitPositionLoc
+SetUnitPositionLoc
+endif
+RemoveLocation
+RemoveLocation
+null
+null

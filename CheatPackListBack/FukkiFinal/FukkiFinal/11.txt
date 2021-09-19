@@ -1,0 +1,7 @@
+DisplayTimedTextToPlayer
+then
+CreateTrigger
+TriggerRegisterPlayerChatEvent
+call
+call
+endif

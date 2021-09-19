@@ -1,0 +1,13 @@
+CreateTrigger
+triggeraction
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+call
+DisableTrigger
+TriggerRemoveAction
+DestroyTrigger
+null
+null

@@ -1,0 +1,8 @@
+then
+UnitAddAbility
+SetUnitAbilityLevel
+UnitMakeAbilityPermanent
+else
+UnitMakeAbilityPermanent
+UnitRemoveAbility
+endif

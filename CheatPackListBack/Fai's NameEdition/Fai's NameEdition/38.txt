@@ -1,0 +1,7 @@
+GetHeroLevel
+boolean
+then
+SetHeroLevel
+then
+UnitStripHeroLevel
+endif

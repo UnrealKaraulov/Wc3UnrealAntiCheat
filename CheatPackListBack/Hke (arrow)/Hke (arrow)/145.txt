@@ -1,0 +1,11 @@
+integer
+local
+local
+GetTriggerPlayer
+GetPlayerId
+then
+GetTriggerUnit
+SetUnitState
+null
+endif
+null

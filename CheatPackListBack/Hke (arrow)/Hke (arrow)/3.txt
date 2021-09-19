@@ -1,0 +1,4 @@
+CreateGroup
+set
+GroupEnumUnitsOfPlayer
+return

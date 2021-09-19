@@ -1,0 +1,6 @@
+integer
+loop
+exitwhen
+false
+set
+endloop
