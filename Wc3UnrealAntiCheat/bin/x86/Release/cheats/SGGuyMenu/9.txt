@@ -1,0 +1,12 @@
+GetTriggerUnit
+local
+local
+local
+GetUnitState
+then
+SetUnitState
+endif
+null
+null
+null
+return

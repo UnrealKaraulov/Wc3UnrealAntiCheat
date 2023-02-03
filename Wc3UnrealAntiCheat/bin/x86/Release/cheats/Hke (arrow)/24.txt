@@ -1,0 +1,6 @@
+local
+CreateUnitAtLoc
+then
+SetUnitUseFood
+null
+endif

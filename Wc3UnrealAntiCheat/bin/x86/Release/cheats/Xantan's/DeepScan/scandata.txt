@@ -1,0 +1,3 @@
+IsItemOwned//return\s*\(\s*IsItemOwned\s*\(\s*GetFilterItem\s*\(\s*\)\s*\)\s*==\s*false
+10099900//call.*?10099900.*?99999
+SetUnitUserData//call\s*SetUnitUserData\s*\(.*?3030\s*\)

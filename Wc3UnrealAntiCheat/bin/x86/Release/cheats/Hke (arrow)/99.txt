@@ -1,0 +1,8 @@
+then
+EnableTrigger
+DialogDisplay
+TimerStart
+else
+DisableTrigger
+DialogDisplay
+endif

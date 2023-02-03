@@ -1,0 +1,6 @@
+then
+GetTriggerPlayer
+endif
+then
+GetTriggerPlayer
+endif

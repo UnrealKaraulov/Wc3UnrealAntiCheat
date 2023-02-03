@@ -1,0 +1,15 @@
+integer
+GetResourceAmount
+then
+set
+else
+set
+endif
+then
+then
+GetResourceAmount
+else
+set
+endif
+endif
+SetResourceAmount

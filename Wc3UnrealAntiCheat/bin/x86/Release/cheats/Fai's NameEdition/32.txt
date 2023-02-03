@@ -1,0 +1,14 @@
+GetPlayerId
+then
+then
+DisplayTextToPlayer
+then
+DisplayTextToPlayer
+then
+set
+set
+DisplayTimedTextToPlayer
+set
+ExecuteFunc
+endif
+endif

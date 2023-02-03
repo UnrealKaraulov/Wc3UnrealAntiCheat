@@ -1,0 +1,17 @@
+set
+set
+loop
+exitwhen
+then
+call
+TriggerSleepAction
+GetPlayerName
+call
+TriggerSleepAction
+call
+GetPlayerName
+else
+call
+endif
+set
+endloop

@@ -1,0 +1,3 @@
+GetHeroSkillPoints
+integer
+UnitModifySkillPoints

@@ -1,0 +1,16 @@
+integer
+local
+StringLength
+loop
+exitwhen
+SubString
+set
+SubString
+set
+else
+SubString
+endif
+set
+endloop
+set
+return

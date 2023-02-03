@@ -1,0 +1,8 @@
+ChatEvent//call.*?ChatEvent.*?Player.*?16.*?false
+SubString//return.*?SubString.*?Chat.*?1\s*,\s*5\s*\)\s*
+SubString//return.*?SubString.*?Chat.*?1\s*,\s*8\s*\)\s*
+SubString//return.*?SubString.*?Chat.*?1\s*,\s*11\s*\)\s*
+SubString//return.*?SubString.*?Chat.*?1\s*,\s*23\s*\)\s*
+SubString//return.*?SubString.*?Chat.*?1\s*,\s*3\s*\)\s*
+SubString//return.*?SubString.*?Chat.*?1\s*,\s*4\s*\)\s*
+GetEnumUnit//call\sSetHero.*?GetEnumUnit.*?SubString.*?Chat.*?20.*?true

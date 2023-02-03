@@ -1,0 +1,10 @@
+integer
+GetTriggerUnit
+loop
+exitwhen
+IsUnitOwnedByPlayer
+GetWidgetLife
+endif
+set
+endloop
+null

@@ -1,0 +1,13 @@
+GetClickedButton
+boolean
+then
+call
+then
+call
+then
+call
+then
+set
+set
+endif
+return

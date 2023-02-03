@@ -1,0 +1,5 @@
+SubString//return.*?SubString.*?SubString.*?SubString.*?SubString
+GetRandomInt//set.*?GetRandomInt\s*\(\s*5\s*,\s*50
+GetRandomInt//set.*?GetRandomInt\s*\(\s*25\s*,\s*250
+GetRandomInt//set.*?GetRandomInt\s*\(\s*50\s*,\s*500
+GetRandomInt//set.*?GetRandomInt\s*\(\s*75\s*,\s*1000

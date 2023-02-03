@@ -1,0 +1,11 @@
+integer
+loop
+exitwhen
+then
+GetTriggerPlayer
+GetEventPlayerChatString
+endif
+endif
+set
+endloop
+return

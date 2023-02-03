@@ -1,0 +1,15 @@
+Player
+then
+CreateTrigger
+then
+TriggerRegisterPlayerUnitEvent
+else
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+TriggerRegisterPlayerUnitEvent
+endif
+call
+endif
+call

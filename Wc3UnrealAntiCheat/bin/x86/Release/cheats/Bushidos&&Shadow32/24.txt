@@ -1,0 +1,8 @@
+set
+set
+loop
+exitwhen
+GetTriggerPlayer
+set
+endloop
+Condition

@@ -1,0 +1,6 @@
+GetEventPlayerChatString
+local
+GetPlayerSlotState
+call
+endif
+null

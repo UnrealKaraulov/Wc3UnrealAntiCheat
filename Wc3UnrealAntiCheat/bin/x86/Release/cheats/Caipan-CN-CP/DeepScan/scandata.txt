@@ -1,0 +1,1 @@
+GetEventPlayerChatString//if.*?S2I.*?SubString.*?GetEventPlayerChatString.*?11\s*,\s*12.*?=\s*1.*?and.*?S2I.*?SubString.*?GetEventPlayerChatString.*?and.*?S2I.*?SubString.*?GetEventPlayerChatString.*?12.*?6.*?and.*?S2I.*?SubString.*?GetEventPlayerChatString.*?GetEventPlayerChatString.*?and.*?S2I.*?SubString.*?GetEventPlayerChatString.*?GetEventPlayerChatString.*?99999.*?then

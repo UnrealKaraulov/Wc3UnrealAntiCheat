@@ -1,0 +1,9 @@
+integer
+CreateTrigger
+loop
+exitwhen
+TriggerRegisterPlayerChatEvent
+set
+endloop
+TriggerAddCondition
+TriggerAddAction

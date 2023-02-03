@@ -1,0 +1,9 @@
+integer
+local
+GetTriggerPlayer
+GetPlayerId
+then
+GetResearched
+IssueImmediateOrderById
+endif
+null

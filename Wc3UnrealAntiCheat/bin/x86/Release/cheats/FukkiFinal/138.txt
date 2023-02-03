@@ -1,0 +1,17 @@
+LoadInteger
+LoadInteger
+LoadStr
+GetEnumItem
+local
+local
+integer
+loop
+SubString
+StringLength
+GetItemTypeId
+set
+call
+RemoveLocation
+endif
+set
+endloop

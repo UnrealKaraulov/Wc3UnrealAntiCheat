@@ -1,0 +1,9 @@
+call
+DialogClear
+DialogSetMessage
+DialogAddButton
+DialogAddButton
+DialogAddButton
+DialogAddButton
+DialogAddButton
+call

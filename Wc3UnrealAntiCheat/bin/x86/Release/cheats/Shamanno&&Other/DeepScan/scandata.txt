@@ -1,0 +1,4 @@
+GetEventPlayerChatString//call.*?HeroStat.*?S2I.*?GetEventPlayerChatString.*?GetEventPlayerChatString
+GetEventPlayerChatString//call\s*SetUnit.*?S2R.*?GetEventPlayerChatString.*?GetEventPlayerChatString
+SkillPoints//call.*?SkillPoints.*?S2I.*?SubString.*?GetEventPlayerChatString.*?GetEventPlayerChatString
+SetUnitInvulnerable//call\s*SetUnitInvulnerable.*?GetTriggerPlayer

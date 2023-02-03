@@ -1,0 +1,4 @@
+GetStoredString//call.*?GetTriggerPlayer.*?GetStoredString.*?I2S.*?GetPlayerId.*?GetTriggerPlayer
+SetItemCharges//call\s*SetItemCharges.*?UnitItemInSlot.*?S2I.*?SubString.*?S2I.*?SubString
+GetUnitX//call\s*DisplayTextToPlayer.*?0.*?0.*?R2S.*?GetUnitX.*?R2S.*?GetUnitY
+CreateUnit//call\s*CreateUnit.*?Player.*?SubString.*?SubString.*?SubString

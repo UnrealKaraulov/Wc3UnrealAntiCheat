@@ -1,0 +1,8 @@
+local
+GetIssuedOrderId
+GetTriggerUnit
+GetOrderPointX
+GetOrderPointY
+endif
+null
+return

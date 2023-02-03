@@ -1,0 +1,15 @@
+GetTriggerEventId
+GetTriggerPlayer
+GetTriggerEventId
+GetTriggerPlayer
+GetTriggerEventId
+GetTriggerPlayer
+GetTriggerEventId
+GetTriggerPlayer
+GetTriggerEventId
+GetTriggerPlayer
+GetTriggerPlayer
+GetTriggerPlayer
+call
+endif
+endif

@@ -1,0 +1,7 @@
+GetEventDamageSource
+GetTriggerUnit
+GetEventDamage
+LoadUnitHandle
+GetTriggeringTrigger
+UnitDamageTarget
+endif

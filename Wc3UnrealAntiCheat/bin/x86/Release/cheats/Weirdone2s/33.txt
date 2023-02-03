@@ -1,0 +1,9 @@
+CreateTrigger
+triggeraction
+TriggerRegisterPlayerUnitEvent
+false
+DisableTrigger
+TriggerRemoveAction
+DestroyTrigger
+null
+null

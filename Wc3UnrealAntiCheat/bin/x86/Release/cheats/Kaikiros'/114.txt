@@ -1,0 +1,7 @@
+GetTriggerPlayer
+return
+endif
+GetEventPlayerChatString
+return
+endif
+return

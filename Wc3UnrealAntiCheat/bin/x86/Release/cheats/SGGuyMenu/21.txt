@@ -1,0 +1,14 @@
+local
+GetTriggerPlayer
+GetPlayerId
+GetPlayerState
+then
+GetTriggeringTrigger
+call
+GetPlayerState
+GetTriggeringTrigger
+endif
+set
+null
+null
+return

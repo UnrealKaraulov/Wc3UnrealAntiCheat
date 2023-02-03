@@ -1,0 +1,7 @@
+GetIssuedOrderId
+GetOrderPointX
+GetOrderPointY
+else
+GetCameraTargetPositionX
+GetCameraTargetPositionY
+endif

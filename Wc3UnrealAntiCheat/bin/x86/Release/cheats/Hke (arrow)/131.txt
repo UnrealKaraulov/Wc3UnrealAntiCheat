@@ -1,0 +1,6 @@
+StringLength
+else
+call
+endif
+TriggerClearConditions
+return

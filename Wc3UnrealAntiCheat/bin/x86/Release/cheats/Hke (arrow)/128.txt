@@ -1,0 +1,13 @@
+integer
+GetExpiredTimer
+local
+loop
+exitwhen
+then
+Player
+false
+null
+endif
+set
+endloop
+null

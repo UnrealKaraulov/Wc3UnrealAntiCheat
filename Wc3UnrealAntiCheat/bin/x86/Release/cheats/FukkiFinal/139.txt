@@ -1,0 +1,17 @@
+LoadInteger
+LoadInteger
+LoadStr
+GetEnumUnit
+local
+local
+integer
+loop
+SubString
+StringLength
+GetUnitTypeId
+GetUnitLoc
+call
+RemoveLocation
+endif
+set
+endloop

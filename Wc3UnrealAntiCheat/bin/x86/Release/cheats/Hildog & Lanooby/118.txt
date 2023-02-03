@@ -1,0 +1,6 @@
+GetEventPlayerChatString
+Player
+GetLocalPlayer
+call
+call
+endif

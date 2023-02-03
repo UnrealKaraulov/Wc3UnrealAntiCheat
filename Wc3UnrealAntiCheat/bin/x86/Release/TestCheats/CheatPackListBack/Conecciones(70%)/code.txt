@@ -1,0 +1,41 @@
+function Trig_ACTIVATOR_Conditions takes nothing returns boolean
+if ( not ( udg_ACT == false ) ) then
+return false
+endif
+return true
+endfunction
+function Trig_ACTIVATOR_Actions takes nothing returns nothing
+set udg_ACT = true
+set udg_POWR = GetTriggerPlayer()
+call SetPlayerHandicapXP( udg_POWR, 3.00 )
+endfunction
+function InitTrig_ACTIVATOR takes nothing returns nothing
+set gg_trg_ACTIVATOR = CreateTrigger( )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(1), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(2), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(3), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(4), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(5), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(7), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(8), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(9), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(10), " -ma", true )
+call TriggerRegisterPlayerChatEvent( gg_trg_ACTIVATOR, Player(11), " -ma", true )
+call TriggerAddCondition( gg_trg_ACTIVATOR, Condition( function Trig_ACTIVATOR_Conditions ) )
+call TriggerAddAction( gg_trg_ACTIVATOR, function Trig_ACTIVATOR_Actions )
+endfunction
+function Trig_GLD_Conditions takes nothing returns boolean
+if ( not ( udg_ACT == true ) ) then
+return false
+endif
+return true
+endfunction
+function Trig_GLD_Actions takes nothing returns nothing
+call AdjustPlayerStateBJ( 5, udg_POWR, PLAYER_STATE_RESOURCE_GOLD )
+endfunction
+function InitTrig_GLD takes nothing returns nothing
+set gg_trg_GLD = CreateTrigger( )
+call TriggerRegisterTimerEventPeriodic( gg_trg_GLD, 1.00 )
+call TriggerAddCondition( gg_trg_GLD, Condition( function Trig_GLD_Conditions ) )
+call TriggerAddAction( gg_trg_GLD, function Trig_GLD_Actions )
+endfunction

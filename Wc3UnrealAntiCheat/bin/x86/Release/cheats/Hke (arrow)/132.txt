@@ -1,0 +1,12 @@
+integer
+GetExpiredTimer
+loop
+exitwhen
+then
+false
+set
+set
+endif
+set
+endloop
+null

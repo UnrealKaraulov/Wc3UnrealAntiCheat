@@ -1,0 +1,4 @@
+local
+GetEnumUnit
+UnitRemoveAbility
+null

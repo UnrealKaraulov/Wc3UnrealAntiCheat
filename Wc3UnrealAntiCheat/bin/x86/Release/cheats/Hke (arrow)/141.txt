@@ -1,0 +1,11 @@
+integer
+integer
+local
+GetTriggerPlayer
+GetPlayerId
+GetPlayerState
+set
+GetPlayerState
+GetPlayerState
+endif
+null

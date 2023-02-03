@@ -1,0 +1,12 @@
+GetTriggerPlayer
+GetPlayerId
+call
+call
+LoadStr
+call
+call
+call
+call
+call
+call
+DialogDisplay

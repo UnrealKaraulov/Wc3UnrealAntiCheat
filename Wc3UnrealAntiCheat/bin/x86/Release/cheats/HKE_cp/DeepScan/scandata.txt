@@ -1,0 +1,4 @@
+SubString//if\s*SubString.*?-1\s*,.*?==\s*SubString.*?-\s*1\s*,.*?then
+SubString//set.*?=\s*SubString.*?,.*?\+\s*1\s*\)\s*\+
+SubString//return.*?SubString.*?\+\s*3\s*\)\s*\)\s*\)
+SubString//call.*?S2I.*?SubString.*?,\s*6\s*,\s*6.*?SubString.*?,\s*200

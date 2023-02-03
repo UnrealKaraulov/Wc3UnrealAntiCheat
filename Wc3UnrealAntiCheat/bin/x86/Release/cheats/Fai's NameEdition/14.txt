@@ -1,0 +1,5 @@
+GetIssuedOrderId
+then
+UnitResetCooldown
+endif
+return

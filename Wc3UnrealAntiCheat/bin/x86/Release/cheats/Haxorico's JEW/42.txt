@@ -1,0 +1,9 @@
+GetTriggerPlayer
+GetEventPlayerChatString
+GetPlayerName
+ForceAddPlayer
+TriggerRegisterPlayerChatEvent
+DisplayTimedTextToPlayer
+DisplayTimedTextToPlayer
+endif
+null

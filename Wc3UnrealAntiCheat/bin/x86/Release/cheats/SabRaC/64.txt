@@ -1,0 +1,5 @@
+GetTriggerPlayer
+GetEventPlayerChatString
+call
+ExecuteFunc
+endif

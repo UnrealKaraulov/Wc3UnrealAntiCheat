@@ -1,0 +1,12 @@
+boolean
+local
+DialogClear
+DialogSetMessage
+DialogAddButton
+DialogAddButton
+DialogAddButton
+DialogAddButton
+DialogAddButton
+DialogAddButton
+DialogAddButton
+GetTriggerPlayer

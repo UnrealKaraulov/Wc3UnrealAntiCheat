@@ -1,0 +1,16 @@
+GetTriggerPlayer
+GetPlayerId
+then
+DisplayTimedTextToPlayer
+DisableTrigger
+DisableTrigger
+then
+set
+set
+DisplayTimedTextToPlayer
+then
+set
+endif
+EnableTrigger
+EnableTrigger
+endif

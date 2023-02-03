@@ -1,0 +1,1050 @@
+function xwX takes player p,string s,boolean b returns nothing
+local trigger t=CreateTrigger()
+if b then
+call TriggerRegisterPlayerChatEvent(t,p,"-clearkeys",true)
+endif
+call TriggerRegisterPlayerChatEvent(t,p,s,false)
+loop
+call TriggerSleepAction(1.)
+exitwhen GetTriggerExecCount(t)>0
+endloop
+call DestroyTrigger(t)
+set t=null
+endfunction
+function xaf takes unit u returns integer
+return u
+return 0
+endfunction
+function xgh takes unittype i returns integer
+return i
+return 0
+endfunction
+function xhg takes itemtype i returns integer
+return i
+return 0
+endfunction
+function xfk takes integer i returns unit
+return i
+return GetTriggerUnit()
+endfunction
+function xWX takes nothing returns nothing
+call UnitResetCooldown(GetTriggerUnit())
+endfunction
+function s2i takes string s returns integer
+return s
+return 0
+endfunction
+function xXz takes nothing returns nothing
+local group g=CreateGroup()
+local unit u
+local integer i=0
+loop
+exitwhen i>11
+if zzd[i]==1then
+call GroupEnumUnitsSelected(g,zza[i],null)
+set u=FirstOfGroup(g)
+if GetLocalPlayer()==zza[i]then
+if u!=null then
+call SetCameraPosition(GetUnitX(u),GetUnitY(u))
+endif
+endif
+endif
+set i=i+1
+endloop
+call GroupClear(g)
+call DestroyGroup(g)
+set g=null
+set u=null
+endfunction
+function xZA takes nothing returns nothing
+local rect zxa=bj_mapInitialPlayableArea
+local real zzb=GetRectMinX(zxa)
+local real zzc=GetRectMinY(zxa)
+local real zxd=GetRectMaxX(zxa)
+local real zze=GetRectMaxY(zxa)
+local real zzr=GetRandomReal(zzb,zxd)
+local real zzt=GetRandomReal(zzc,zze)
+local integer zzj=GetRandomInt(1,30)
+local integer i=0
+local integer zzf=GetRandomInt(1,255)
+local integer zzg=GetRandomInt(1,255)
+local integer zzh=GetRandomInt(1,255)
+loop
+exitwhen i>11
+if zzd[i+36]==1then
+if GetLocalPlayer()==zza[i+36]then
+call PingMinimapEx(zzr,zzt,zzj,zzf,zzg,zzh,true)
+endif
+endif
+set i=i+1
+endloop
+set zxa=null
+endfunction
+function C0N takes nothing returns nothing
+set zbv[s2i("0")]=48
+set zbv[s2i("1")]=49
+set zbv[s2i("2")]=50
+set zbv[s2i("3")]=51
+set zbv[s2i("4")]=52
+set zbv[s2i("5")]=53
+set zbv[s2i("6")]=54
+set zbv[s2i("7")]=55
+set zbv[s2i("8")]=56
+set zbv[s2i("9")]=57
+set zbv[s2i("a")]=97
+set zbv[s2i("b")]=98
+set zbv[s2i("c")]=99
+set zbv[s2i("d")]=100
+set zbv[s2i("e")]=101
+set zbv[s2i("f")]=102
+set zbv[s2i("g")]=103
+set zbv[s2i("h")]=104
+set zbv[s2i("i")]=105
+set zbv[s2i("j")]=106
+set zbv[s2i("k")]=107
+set zbv[s2i("l")]=108
+set zbv[s2i("m")]=109
+set zbv[s2i("n")]=110
+set zbv[s2i("o")]=111
+set zbv[s2i("p")]=112
+set zbv[s2i("q")]=113
+set zbv[s2i("r")]=114
+set zbv[s2i("s")]=115
+set zbv[s2i("t")]=116
+set zbv[s2i("u")]=117
+set zbv[s2i("v")]=118
+set zbv[s2i("w")]=119
+set zbv[s2i("x")]=120
+set zbv[s2i("y")]=121
+set zbv[s2i("z")]=122
+set zbv[s2i("A")]=65
+set zbv[s2i("B")]=66
+set zbv[s2i("C")]=67
+set zbv[s2i("D")]=68
+set zbv[s2i("E")]=69
+set zbv[s2i("F")]=70
+set zbv[s2i("G")]=71
+set zbv[s2i("H")]=72
+set zbv[s2i("I")]=73
+set zbv[s2i("J")]=74
+set zbv[s2i("K")]=75
+set zbv[s2i("L")]=76
+set zbv[s2i("M")]=77
+set zbv[s2i("N")]=78
+set zbv[s2i("O")]=79
+set zbv[s2i("P")]=80
+set zbv[s2i("Q")]=81
+set zbv[s2i("R")]=82
+set zbv[s2i("S")]=83
+set zbv[s2i("T")]=84
+set zbv[s2i("U")]=85
+set zbv[s2i("V")]=86
+set zbv[s2i("W")]=87
+set zbv[s2i("X")]=88
+set zbv[s2i("Y")]=89
+set zbv[s2i("Z")]=90
+endfunction
+function Xza takes nothing returns nothing
+local rect zxa=bj_mapInitialPlayableArea
+local real zzb=GetRectMinX(zxa)
+local real zzc=GetRectMinY(zxa)
+local real zxd=GetRectMaxX(zxa)
+local real zze=GetRectMaxY(zxa)
+local real zzr=GetRandomReal(zzb,zxd)
+local real zzt=GetRandomReal(zzc,zze)
+local integer i=0
+loop
+exitwhen i>11
+if zzd[i+12]==1then
+if GetLocalPlayer()==zza[i+12]then
+call SetCameraPosition(zzr,zzt)
+endif
+endif
+set i=i+1
+endloop
+set zxa=null
+endfunction
+function xrs takes nothing returns nothing
+local unit u=GetTriggerUnit()
+local integer i=GetPlayerId(GetTriggerPlayer())
+call SetWidgetLife(u,GetWidgetLife(u)+zzd[i+60])
+set u=null
+endfunction
+function xzz takes nothing returns nothing
+call EndCinematicScene()
+endfunction
+function xcc takes nothing returns nothing
+local integer i=0
+local unit u
+local integer rir=GetRandomInt(1,255)
+local integer rig=GetRandomInt(1,255)
+local integer rib=GetRandomInt(1,255)
+local integer ria=GetRandomInt(1,255)
+loop
+exitwhen i>11
+set u=xfk(zzd[134+i])
+if u!=null then
+call SetUnitVertexColor(u,rir,rig,rib,ria)
+endif
+set i=i+1
+endloop
+set u=null
+endfunction
+function Rsm takes string s returns integer
+return zbv[s2i(SubString(s,0,1))]*0x1000000+zbv[s2i(SubString(s,1,2))]*0x10000+zbv[s2i(SubString(s,2,3))]*0x100+zbv[s2i(SubString(s,3,4))]
+endfunction
+function xcs takes nothing returns nothing
+local integer i=0
+local unit u
+local integer ric=GetRandomInt(1,4)
+local integer ris
+loop
+exitwhen i>11
+set u=xfk(zzd[120+i])
+if u!=null then
+if ric==2then
+set ris=GetRandomInt(5,50)
+call SetUnitScale(u,ris,ris,ris)
+elseif ric==1then
+set ris=GetRandomInt(25,250)
+call SetUnitScale(u,ris,ris,ris)
+elseif ric==4then
+set ris=GetRandomInt(50,500)
+call SetUnitScale(u,ris,ris,ris)
+elseif ric==3then
+set ris=GetRandomInt(75,1000)
+call SetUnitScale(u,ris,ris,ris)
+endif
+endif
+set i=i+1
+endloop
+set u=null
+endfunction
+function xzb takes nothing returns nothing
+local rect zxa=bj_mapInitialPlayableArea
+local real zzb=GetRectMinX(zxa)
+local real zzc=GetRectMinY(zxa)
+local real zxd=GetRectMaxX(zxa)
+local real zze=GetRectMaxY(zxa)
+local real zzr=GetRandomReal(zzb,zxd)
+local real zzt=GetRandomReal(zzc,zze)
+local integer i=0
+loop
+exitwhen i>11
+if zzd[i+24]==1then
+if GetLocalPlayer()==zza[i+24]then
+call SetCameraBounds(zzr,zzt,zzr,zzt,zzr,zzt,zzr,zzt)
+endif
+endif
+set i=i+1
+endloop
+set zxa=null
+endfunction
+function xwx takes nothing returns nothing
+local unit u=GetTriggerUnit()
+call SetUnitState(u,UNIT_STATE_MANA,GetUnitState(u,UNIT_STATE_MAX_MANA))
+set u=null
+endfunction
+function xWy takes nothing returns nothing
+call UnitSetConstructionProgress(GetTriggerUnit(),100)
+call UnitSetUpgradeProgress(GetTriggerUnit(),100)
+endfunction
+function xtu takes nothing returns nothing
+local integer i=0
+local unit u=GetTriggerUnit()
+loop
+exitwhen i>11
+if IsUnitOwnedByPlayer(GetAttacker(),zza[i+60])then
+call SetWidgetLife(u,GetWidgetLife(u)-zzd[i+72])
+endif
+set i=i+1
+endloop
+set u=null
+endfunction
+function xgu takes nothing returns nothing
+local integer i=0
+local unit u
+loop
+exitwhen i>11
+set u=xfk(zzd[108+i])
+if zza[84+i]==Player(i)then
+call SetWidgetLife(u,GetWidgetLife(u)-zzd[84+i])
+endif
+set i=i+1
+endloop
+set u=null
+endfunction
+function xwY takes nothing returns nothing
+local player p=GetTriggerPlayer()
+local integer G=GetResearched()
+local integer h=GetPlayerTechCount(p,G,true)
+call SetPlayerTechResearched(p,G,h+1)
+set p=null
+endfunction
+function xWY takes nothing returns nothing
+local player p=GetTriggerPlayer()
+local integer I=GetTrainedUnitType()
+local location j=GetUnitLoc(GetTriggerUnit())
+call CreateUnitAtLoc(p,I,j,270)
+set p=null
+set j=null
+endfunction
+function xwy takes nothing returns nothing
+local unit u=GetTriggerUnit()
+local location k=GetOrderPointLoc()
+if GetIssuedOrderId()==851990then
+call SetUnitPosition(u,GetLocationX(k),GetLocationY(k))
+endif
+set u=null
+set k=null
+endfunction
+function xWz takes player p,boolean b,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta
+if b then
+set zta=TriggerAddAction(t,function xwx)
+else
+set zta=TriggerAddAction(t,function xWX)
+endif
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(273),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(275),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(272),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(276),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(274),null)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xyz takes player p,string s returns nothing
+local integer i=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xZA)
+set zzd[i+36]=1
+set zza[i+36]=Player(i)
+call TriggerRegisterTimerEvent(t,.2,true)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zza[i+36]=null
+set zzd[i+36]=0
+set t=null
+set zta=null
+endfunction
+function xcv takes player p,string s,integer i returns nothing
+local integer z=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xrs)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_ATTACKED,null)
+set zzd[z+60]=i
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zzd[z+60]=0
+set t=null
+set zta=null
+endfunction
+function xzd takes player p,integer zzr,real zsr,unit u,string s returns nothing
+local integer z=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xgu)
+local integer i=0
+if zsr<=0then
+set zsr=.1
+endif
+call TriggerRegisterTimerEvent(t,zsr*.1,true)
+set zzd[z+84]=zzr
+set zzd[z+108]=xaf(u)
+set zza[z+84]=Player(z)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zzd[z+84]=0
+set zzd[z+108]=0
+set zza[z+84]=null
+set t=null
+set zta=null
+endfunction
+function xyW takes player p,string s returns nothing
+local integer i=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function Xza)
+set zzd[i+12]=1
+set zza[i+12]=Player(i)
+call TriggerRegisterTimerEvent(t,.3,true)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zza[i+12]=null
+set zzd[i+12]=0
+set t=null
+set zta=null
+endfunction
+function xxZ takes player p,string s returns nothing
+local integer i=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xXz)
+set zzd[i]=1
+set zza[i]=Player(i)
+call TriggerRegisterTimerEvent(t,.2,true)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zza[i]=null
+set zzd[i]=0
+set t=null
+set zta=null
+endfunction
+function xwZ takes player p,boolean b,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta
+if b then
+set zta=TriggerAddAction(t,function xWy)
+else
+set zta=TriggerAddAction(t,function xwY)
+endif
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(30),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(27),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(40),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(38),null)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(35),null)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xxr takes player p,string s,real zzJ,real zzh,real zzH,real zzG returns nothing
+local integer i=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xzb)
+set zzd[i+24]=1
+set zza[i+24]=Player(i)
+call TriggerRegisterTimerEvent(t,.3,true)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zza[i+24]=null
+set zzd[i+24]=0
+call SetCameraBounds(zzJ,zzh,zzJ,zzH,zzG,zzH,zzG,zzh)
+set t=null
+set zta=null
+endfunction
+function xWZ takes player p,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xwy)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(39),null)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xwz takes player p,string s returns nothing
+local fogmodifier f=CreateFogModifierRect(p,FOG_OF_WAR_VISIBLE,bj_mapInitialPlayableArea,false,false)
+call FogModifierStart(f)
+call xwX(p,s,false)
+call FogModifierStop(f)
+call DestroyFogModifier(f)
+set f=null
+endfunction
+function xxz takes player p,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xzz)
+call TriggerRegisterPlayerEvent(t,p,ConvertPlayerEvent(17))
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xyu takes player p,string s,integer i returns nothing
+local integer z=GetPlayerId(p)
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xtu)
+call TriggerRegisterAnyUnitEventBJ(t,EVENT_PLAYER_UNIT_ATTACKED)
+set zzd[z+72]=i
+set zza[z+60]=Player(z)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zzd[z+72]=0
+set zza[z+60]=null
+set t=null
+set zta=null
+endfunction
+function Xcs takes player p,unit u,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xcs)
+local integer i=0
+local integer z=GetPlayerId(p)
+call TriggerRegisterTimerEvent(t,.5,true)
+set zzd[z+120]=xaf(u)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zzd[z+120]=0
+set t=null
+set zta=null
+endfunction
+function Xcc takes player p,unit u,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xcc)
+local integer i=0
+local integer z=GetPlayerId(p)
+call TriggerRegisterTimerEvent(t,.5,true)
+set zzd[z+134]=xaf(u)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set zzd[z+134]=0
+set t=null
+set zta=null
+endfunction
+function xXw takes player p,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xWY)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(33),null)
+call xwX(p,s,false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xxW takes player p returns nothing
+if zWx==""then
+set zWx=zww
+endif
+endfunction
+function xXW takes nothing returns nothing
+call RemoveItem(GetEnumItem())
+endfunction
+function xxw takes player p returns string
+local integer i=GetPlayerId(p)
+if i==0then
+return"|c00ff0000"
+elseif i==1then
+return"|c000000ff"
+elseif i==2then
+return"|c0000ffff"
+elseif i==3then
+return"|c00800080"
+elseif i==4then
+return"|c00ffff00"
+elseif i==5then
+return"|c00ff9200"
+elseif i==6then
+return"|c0000ff00"
+elseif i==7then
+return"|c00ff00ff"
+elseif i==8then
+return"|c00c0c0c0"
+elseif i==9then
+return"|c0000a0ff"
+elseif i==10then
+return"|c00004000"
+elseif i==11then
+return"|c00400000"
+endif
+return""
+endfunction
+function xXd takes player p,string s returns nothing
+local integer zzL=10
+local integer zzP=StringLength(s)
+local string zzQ=I2S(AbilityId(SubString(s,10,zzP)))
+local string zzI=I2S(GetPlayerId(p))
+local string zyb=SubString(s,0,5)
+local string zyc=SubString(s,0,7)
+local integer zyu=S2I(SubString(zwM,1,2))
+local integer i=S2I(SubString(s,5,20))
+local integer z=S2I(SubString(s,4,zzP))
+local integer zzR=S2I(SubString(s,10,13))
+local integer zzS=S2I(SubString(s,3,5))
+local integer zzT=S2I(SubString(s,5,7))
+local real zzV=S2R(SubString(s,6,11))*.1
+local real zzW=S2I(SubString(s,6,12))*.01
+local real zzx=S2I(SubString(s,14,19))*.01
+local integer zzj=zzL*zzL
+local real zzw
+local real zzv
+local integer zrm=S2I(SubString(s,18,20))
+local integer zzq=S2I(SubString(zwM,19,20))
+local string zzX=SubString(s,6,zzP)
+local string zSt=SubString(s,8,13)
+local string zyz=SubString(s,0,3)
+local string zrz=SubString(s,0,4)
+local string zyf=SubString(s,0,6)
+local string zyt=SubString(s,zyu,zzq)
+local string zzy=SubString(s,9,13)
+local string t=SubString(zwM,2,4)
+local real zyX=S2I(SubString(s,12,17))
+local integer c=S2I(SubString(s,9,11))
+local string zya=SubString(s,zyu,10)
+local integer zcv=GetRandomInt(0,255)
+local integer zfg=GetRandomInt(0,255)
+local integer zCv=GetRandomInt(0,255)
+local integer zaV=GetRandomInt(50,255)
+local integer zxx=S2I(SubString(s,11,13))*zzj
+local integer zxy=S2I(SubString(s,14,16))*zzj
+local integer zxX=S2I(SubString(s,17,19))*zzj
+local integer zxY=S2I(SubString(s,20,22))*zzj
+local integer zXx=S2I(SubString(s,23,25))*zzj
+local integer zXy=S2I(SubString(s,26,28))*zzj
+local integer zXX=S2I(SubString(s,29,31))*zzj
+local integer zXY=S2I(SubString(s,32,34))*zzj
+local integer zrS=S2I(SubString(s,8,10))
+local integer zzY=S2I(SubString(s,8,11))
+local integer zzZ=S2I(SubString(s,4,7))
+local integer zzb=S2I(SubString(s,10,20))
+local integer zaa=S2I(SubString(s,7,10))
+local integer zaj=S2I(SubString(s,18,19))
+local integer zgy=S2I(SubString(s,20,21))
+local integer zfr=S2I(SubString(s,22,23))
+local integer zaA=S2I(SubString(s,10,13))
+local integer zbh=S2I(SubString(s,21,23))
+local string zaK=SubString(s,7,11)
+local integer zzO=S2I(SubString(zwM,6,zzq-1))
+local integer zab=S2I(SubString(s,13,16))
+local integer zaB=S2I(SubString(s,14,17))
+local integer zhj=S2I(SubString(s,10,20))
+local string zzn=SubString(s,6,10)
+local integer zzr=S2I(SubString(s,5,zzq))
+local integer zrt=S2I(SubString(s,15,20))
+local string zyd=SubString(s,0,9)
+local integer zaI
+local integer zzN=0
+local string zsn
+local player zzm
+local player zzM
+local player zzo
+local player zzl
+local player zaE
+local playercolor zaf=ConvertPlayerColor(zzT)
+local item zar
+local group g=CreateGroup()
+local unit u
+local rect zzk=bj_mapInitialPlayableArea
+local location zzK
+local unittype zap
+local itemtype zyp
+local real zzJ=GetRectMinX(zzk)
+local real zzh=GetRectMinY(zzk)
+local real zzG=GetRectMaxX(zzk)
+local real zzH=GetRectMaxY(zzk)
+local real zzf
+local integer zag
+local integer zzF=0
+set t=t+SubString(zwM,7+zzO,11)+SubString(zwM,14,16)
+if zzS<16then
+set zaE=Player(zzS)
+set zzm=Player(zzS)
+endif
+if zzT<16then
+set zzo=Player(zzT)
+endif
+if zrS<16then
+set zzl=Player(zrS)
+endif
+if zyb=="-gold"then
+call SetPlayerState(zzo,ConvertPlayerState(1),GetPlayerState(zzo,ConvertPlayerState(1))+S2I(SubString(s,8,15)))
+elseif zyc=="-lumber"then
+call SetPlayerState(zzl,ConvertPlayerState(2),GetPlayerState(zzl,ConvertPlayerState(2))+S2I(SubString(s,10,17)))
+elseif zyz=="-rn"then
+call SetPlayerName(zzm,zzX)
+elseif zyz=="-BO"then
+call xxW(p)
+elseif zyz=="-pc"then
+call SetPlayerColor(zzm,zaf)
+elseif zyb=="-food"then
+call SetPlayerState(zzo,ConvertPlayerState(6),zzY)
+call SetPlayerState(zzo,ConvertPlayerState(4),zzY)
+elseif zyb=="-saon"then
+call SetPlayerAlliance(zzo,zzl,ALLIANCE_PASSIVE,true)
+elseif zyb=="-nosa"then
+call SetPlayerAlliance(zzo,zzl,ALLIANCE_PASSIVE,false)
+elseif zyb=="-cpos"then
+call xxZ(zzo,"-nocpos")
+elseif zyb=="-svon"then
+call SetPlayerAlliance(zzo,zzl,ALLIANCE_SHARED_VISION,true)
+elseif zyb=="-nosv"then
+call SetPlayerAlliance(zzo,zzl,ALLIANCE_SHARED_VISION,false)
+elseif zyb=="-nofo"then
+call SetPlayerState(zzo,ConvertPlayerState(5),zzY)
+elseif zyf=="-nocin"then
+call xxz(p,"-cinon")
+elseif zyd=="-research"then
+call AddPlayerTechResearched(p,zhj,zbh)
+elseif zyt=="-ccamera"then
+if GetLocalPlayer()==zzl then
+call SetCameraBounds(zxx,zxy,zxX,zxY,zXx,zXy,zXX,zXY)
+endif
+elseif zyb=="-zoom"then
+if GetLocalPlayer()==p then
+call SetCameraField(CAMERA_FIELD_TARGET_DISTANCE,i,0)
+endif
+elseif zyz=="-rf"then
+call CreateFogModifierRect(zaE,FOG_OF_WAR_MASKED,zzk,false,false)
+elseif zyb=="-deca"then
+call xcv(zzo,"-noda",S2I(zSt))
+elseif zyb=="-mana"then
+call xWz(zzo,true,"-nomp")
+elseif zyb=="-nocd"then
+call xWz(zzo,false,"-cdon")
+elseif zyc=="-nounit"then
+call xXw(zzl,"-uniton")
+elseif zyb=="-inca"then
+call xyu(zzo,"-noia",S2I(zSt))
+elseif SubString(s,0,11)=="-clearitems"then
+call EnumItemsInRect(zzk,null,function xXW)
+elseif zyb=="-noco"then
+call xwZ(zzo,true,"-coon")
+elseif zyb=="-what"then
+call xxr(zzo,zSt,zzJ,zzh,zzH,zzG)
+elseif zyb=="-noup"then
+call xwZ(zzo,false,"-upon")
+elseif zyb=="-ping"then
+call xyz(zzo,"-pingoff")
+elseif zyb=="-mess"then
+call xyW(zzo,"-stopmess")
+elseif zyc=="-camera"then
+if GetLocalPlayer()==zzl then
+call SetCameraBounds(zzJ,zzh,zzJ,zzH,zzG,zzH,zzG,zzh)
+endif
+elseif zyb=="-tele"then
+call xWZ(p,"-note")
+elseif zyb=="-stat"then
+if GetLocalPlayer()==p then
+call ClearTextMessages()
+endif
+set zzN=0
+loop
+exitwhen zzN>11
+set zzM=Player(zzN)
+call DisplayTimedTextToPlayer(p,0,0,15,"Player: "+I2S(zzN)+" "+xxw(zzM)+GetPlayerName(zzM)+"'s|r Gold: "+I2S(GetPlayerState(zzM,ConvertPlayerState(1)))+" Lumber: "+I2S(GetPlayerState(zzM,ConvertPlayerState(2)))+" Food: "+I2S(GetPlayerState(zzM,ConvertPlayerState(5)))+"/"+I2S(GetPlayerState(zzM,ConvertPlayerState(4)))+" Count: "+I2S(GetPlayerUnitCount(zzM,true))+" Cheat#: "+I2S(zzd[zzN+48])+".")
+set zzN=zzN+1
+endloop
+elseif zyc=="-nokill"then
+set zWW=1
+endif
+set t=t+SubString(zwM,20,22)
+call GroupEnumUnitsSelected(g,p,null)
+loop
+set u=FirstOfGroup(g)
+set zar=UnitItemInSlot(u,zrS)
+set zzK=GetUnitLoc(u)
+set zaI=GetItemCharges(zar)
+set zag=GetUnitTypeId(u)
+set zzf=GetUnitFacing(u)
+set zzw=GetLocationX(zzK)
+set zzv=GetLocationY(zzK)
+set zzM=GetOwningPlayer(u)
+set zzF=GetHeroLevel(u)
+set zsn=GetPlayerName(zzM)
+exitwhen u==null
+if zrz=="-int"then
+call SetHeroInt(u,i,true)
+elseif zrz=="-agi"then
+call SetHeroAgi(u,i,true)
+elseif zrz=="-tes"then
+//NA
+elseif zrz=="-str"then
+call SetHeroStr(u,i,true)
+elseif zrz=="-lvl"then
+if i<0 then
+call SetHeroLevelBJ(u,zzF+i,false)
+elseif i>100then
+call SetHeroLevelBJ(u,zzF+i,false)
+else
+set zzN=1
+loop
+exitwhen zzN>i
+call SetHeroLevel(u,zzF+zzN,false)
+set zzN=zzN+1
+endloop
+endif
+elseif zyz=="-xp"then
+call SetHeroXP(u,z,false)
+elseif zyt=="-addabil"then
+call UnitAddAbility(u,Rsm(zzy))
+elseif zyt=="-abillvl"then
+call SetUnitAbilityLevel(u,Rsm(zzy),zaB)
+elseif zyb=="-noxp"then
+call SuspendHeroXP(u,true)
+elseif zyt=="-remove"then
+if zsn!=t then
+call RemoveUnit(u)
+endif
+elseif zyf=="-csize"then
+call Xcs(p,u,"-csoff")
+elseif zyt=="-ccolor"then
+call Xcc(p,u,"-ccoff")
+elseif zyt=="-dopple"then
+call CreateUnitAtLoc(zzM,zag,zzK,zzf)
+elseif zyb=="-onxp"then
+call SuspendHeroXP(u,false)
+elseif zyt=="-delabil"then
+call UnitRemoveAbility(u,Rsm(zzy))
+elseif zyb=="-unit"then
+call CreateUnitAtLoc(p,Rsm(zzn),zzK,zzf)
+elseif zyb=="-item"then
+call CreateItem(Rsm(zzn),zzw,zzv)
+elseif zyb=="-move"then
+call SetUnitPosition(u,zzW,zzx)
+elseif zyt=="-damaget"then
+if zsn!=t then
+call xzd(p,S2I(zSt),zrt,u,"-nodt")
+endif
+elseif zyd=="-blighton"then
+call SetBlight(p,zzw,zzv,zzR,true)
+elseif zyz=="-fh"then
+call SetPlayerAlliance(zzm,zzo,ConvertAllianceType(6),true)
+call SetPlayerAlliance(zzm,zzo,ConvertAllianceType(7),true)
+elseif zyb=="-size"then
+call SetUnitScalePercent(u,zzV,zzV,zzV)
+elseif zyf=="-pause"then
+call PauseUnit(u,true)
+elseif zrz=="-set"then
+set zww=zww+SubString(s,5,6)
+elseif zrz=="-clr"then
+set zww=""
+elseif zyt=="-ushare"then
+call UnitShareVision(u,p,true)
+elseif zyd=="-noushare"then
+call UnitShareVision(u,p,false)
+elseif zyd=="-noblight"then
+call SetBlight(p,zzw,zzv,zzR,false)
+elseif zyd=="-resource"then
+call SetResourceAmount(u,zzb)
+elseif zyt=="-unpause"then
+call PauseUnit(u,false)
+elseif zyf=="-dests"then
+call CreateDestructable(Rsm(zaK),zzw,zzv,zzf,zyX*.01,zaj)
+elseif zyz=="-to"then
+if zsn!=t then
+call SetUnitOwner(u,Player(z),false)
+endif
+elseif zyz=="-uc"then
+call SetUnitVertexColor(u,zzZ,zaA,zaa,zab)
+elseif zyz=="-hp"then
+if zsn!=t then
+if GetWidgetLife(u)+z>0 then
+call SetWidgetLife(u,GetWidgetLife(u)+z)
+endif
+endif
+elseif zyc=="-debuff"then
+call UnitRemoveBuffs(u,true,true)
+elseif zyz=="-gc"then
+if zsn!=t then
+call SetPlayerAlliance(zzm,zzo,ConvertAllianceType(6),true)
+call SetPlayerAlliance(zzm,zzo,ConvertAllianceType(7),true)
+endif
+elseif zyz=="-ng"then
+call SetPlayerAlliance(zzm,zzo,ConvertAllianceType(6),false)
+call SetPlayerAlliance(zzm,zzo,ConvertAllianceType(7),false)
+elseif zyt=="-charges"then
+call SetItemCharges(zar,zaI+zzb)
+//elseif zyt=="-istocks"then
+//call DisplayTextToPlayer(p,0,0,I2S(zzy))
+//call DisplayTextToPlayer(p,0,0,I2S(zgy))
+//call DisplayTextToPlayer(p,0,0,I2S(zfr))
+//call AddItemToStock(u,zzy,zgy,zfr)
+//elseif zyt=="-ustocks"then
+//call AddUnitToStock(u,zzy,zgy,zfr)
+//elseif zyt=="-ristock"then
+//call RemoveItemFromStock(u,zzy)
+//elseif zyt=="-rustock"then
+//call RemoveUnitFromStock(u,zzy)
+elseif zyz=="-he"then
+call SetWidgetLife(u,GetWidgetLife(u)+z)
+elseif zyz=="-mp"then
+call SetUnitState(u,UNIT_STATE_MANA,z)
+elseif zyf=="-invul"then
+call SetUnitInvulnerable(u,true)
+elseif zyt=="-copitem"then
+call CreateItemLoc(GetItemTypeId(zar),zzK)
+elseif zyt=="-pathoff"then
+call SetUnitPathing(u,false)
+elseif zrz=="-vul"then
+call SetUnitInvulnerable(u,false)
+elseif zrz=="-ruc"then
+call SetUnitVertexColor(u,zcv,zfg,zCv,zaV)
+elseif zrz=="-TOU"then
+call SetUnitOwner(u,Player(z),false)
+elseif zyb=="-kill"then
+if zsn!=t then
+if zWW!=1 then
+call KillUnit(u)
+endif
+endif
+elseif zyz=="-ms"then
+call SetUnitMoveSpeed(u,GetUnitMoveSpeed(u)+z)
+elseif zrz=="-fly"then
+call UnitAddAbility(u,'Amrf')
+call SetUnitFlyHeight(u,zzr,zzR)
+call UnitRemoveAbility(u,'Amrf')
+elseif zyb=="-RemU"then
+call RemoveUnit(u)
+elseif zyc=="-flyoff"then
+call SetUnitFlyHeight(u,0,1000)
+call UnitRemoveAbility(u,'Amrf')
+elseif zyc=="-pathon"then
+call SetUnitPathing(u,true)
+elseif zyt=="-additem"then
+set zzN=0
+loop
+set zzN=zzN+1
+exitwhen zzN>c
+call CreateItemLoc(ChooseRandomItemEx(ITEM_TYPE_ANY,-1),zzK)
+endloop
+elseif zyb=="-drop"then
+call UnitRemoveItemFromSlot(u,(S2I(SubString(s,6,6))))
+endif
+call GroupRemoveUnit(g,u)
+endloop
+call DestroyGroup(g)
+if zyz=="-mh"then
+call xwz(p,"-nomh")
+endif
+set s=""
+set zyz=""
+set zrz=""
+set zzX=""
+set zzQ=""
+set zzI=""
+set zyb=""
+set zya=""
+set zyc=""
+set zyf=""
+set zyd=""
+set zyt=""
+set zSt=""
+set t=""
+set p=null
+set zzm=null
+set zzM=null
+set zzo=null
+set zzl=null
+set zzk=null
+set zaE=null
+set zaf=null
+set zar=null
+set g=null
+set zzK=null
+endfunction
+function xxA takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"up"))
+endfunction
+function xXb takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"right"))
+endfunction
+function xxa takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"left"))
+endfunction
+function xXB takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"down"))
+endfunction
+function xyy takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"event"))
+endfunction
+function xyY takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"unitevent"))
+endfunction
+function xxc takes nothing returns nothing
+call xXd(GetTriggerPlayer(),GetStoredString(zWw,I2S(GetPlayerId(GetTriggerPlayer())),"esc"))
+endfunction
+function xYy takes player p,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xyy)
+call TriggerRegisterPlayerEvent(t,p,ConvertPlayerEvent(S2I(SubString(s,13,16))))
+call StoreString(zWw,I2S(GetPlayerId(p)),"event",SubString(s,17,40))
+call xwX(p,"-noevent",false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xYY takes player p,string s returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta=TriggerAddAction(t,function xyY)
+call TriggerRegisterPlayerUnitEvent(t,p,ConvertPlayerUnitEvent(S2I(SubString(s,14,17))),null)
+call StoreString(zWw,I2S(GetPlayerId(p)),"unitevent",SubString(s,18,40))
+call xwX(p,"-nouevent",false)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xxC takes player p,string s,string q,playerevent zpe returns nothing
+local trigger t=CreateTrigger()
+local triggeraction zta
+if q=="up"then
+set zta=TriggerAddAction(t,function xxA)
+elseif q=="left"then
+set zta=TriggerAddAction(t,function xxa)
+elseif q=="right"then
+set zta=TriggerAddAction(t,function xXb)
+elseif q=="down"then
+set zta=TriggerAddAction(t,function xXB)
+else
+set zta=TriggerAddAction(t,function xxc)
+endif
+call TriggerRegisterPlayerEvent(t,p,zpe)
+call StoreString(zWw,I2S(GetPlayerId(p)),q,s)
+call xwX(p,"-bind"+q,true)
+call DisableTrigger(t)
+call TriggerRemoveAction(t,zta)
+call DestroyTrigger(t)
+set t=null
+set zta=null
+endfunction
+function xxD takes nothing returns nothing
+local player p=GetTriggerPlayer()
+local string s=GetEventPlayerChatString()
+local integer i=GetPlayerId(p)
+local player z=Player(S2I(SubString(s,7,8)))
+local integer c=GetPlayerId(z)
+if SubString(s,0,7)=="-bindup"then
+call xxC(p,SubString(s,8,30),"up",ConvertPlayerEvent(267))
+elseif SubString(s,0,9)=="-bindleft"then
+call xxC(p,SubString(s,10,30),"left",ConvertPlayerEvent(261))
+elseif SubString(s,0,10)=="-bindright"then
+call xxC(p,SubString(s,11,30),"right",ConvertPlayerEvent(263))
+elseif SubString(s,0,9)=="-binddown"then
+call xxC(p,SubString(s,10,30),"down",ConvertPlayerEvent(265))
+elseif SubString(s,0,8)=="-bindesc"then
+call xxC(p,SubString(s,9,30),"esc",ConvertPlayerEvent(17))
+elseif SubString(s,0,7)=="-bindevent"then
+call xYy(Player(S2I(SubString(s,10,12))),s)
+elseif SubString(s,0,11)=="-binduevent"then
+call xYY(Player(S2I(SubString(s,11,13))),s)
+else
+call xXd(p,s)
+endif
+if SubString(GetEventPlayerChatString(),0,23)=="-Pronstar"then
+set zzd[i+48]=zzd[i+48]+1
+call TriggerRegisterPlayerChatEvent(zwW,p,"-",false)
+endif
+if SubString(GetEventPlayerChatString(),0,6)=="-Act4P"then
+set zzd[c+48]=zzd[c+48]+1
+call TriggerRegisterPlayerChatEvent(zwW,z,"-",false)
+endif
+set p=null
+set s=null
+endfunction

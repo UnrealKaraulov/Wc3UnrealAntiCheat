@@ -1,0 +1,546 @@
+function Trig_gold_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_gold_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_gold_DARK_Actions takes nothing returns nothing
+call SetPlayerStateBJ(GetTriggerPlayer(),PLAYER_STATE_RESOURCE_GOLD,S2I(SubStringBJ(GetEventPlayerChatString(),7,17)))
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_gold_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_wood_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_wood_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_wood_DARK_Actions takes nothing returns nothing
+call SetPlayerStateBJ(GetTriggerPlayer(),PLAYER_STATE_RESOURCE_LUMBER,S2I(SubStringBJ(GetEventPlayerChatString(),7,17)))
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_wood_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_food_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_food_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_food_DARK_Actions takes nothing returns nothing
+call SetPlayerStateBJ(GetTriggerPlayer(),PLAYER_STATE_RESOURCE_FOOD_CAP,S2I(SubStringBJ(GetEventPlayerChatString(),7,17)))
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_food_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_mh_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_mh_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_mh_on_DARK_Actions takes nothing returns nothing
+call CreateFogModifierRectBJ(true,GetTriggerPlayer(),FOG_OF_WAR_VISIBLE,bj_mapInitialPlayableArea)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_mh_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_mh_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_mh_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_mh_off_DARK_Actions takes nothing returns nothing
+call DestroyFogModifier(bj_lastCreatedFogModifier)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_mh_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_explore_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_explore_DARK_Func004001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_explore_DARK_Actions takes nothing returns nothing
+call CreateFogModifierRectBJ(true,GetTriggerPlayer(),FOG_OF_WAR_VISIBLE,bj_mapInitialPlayableArea)
+call TriggerSleepAction(.05)
+call DestroyFogModifier(bj_lastCreatedFogModifier)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_explore_DARK_Func004001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_share_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_share_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_share_on_DARK_Actions takes nothing returns nothing
+set bj_forLoopAIndex=1
+set bj_forLoopAIndexEnd=12
+loop
+exitwhen bj_forLoopAIndex>bj_forLoopAIndexEnd
+call SetPlayerAllianceBJ(Player(-1+(bj_forLoopAIndex)),ALLIANCE_SHARED_ADVANCED_CONTROL,true,GetTriggerPlayer())
+set bj_forLoopAIndex=bj_forLoopAIndex+1
+endloop
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_share_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_share_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_share_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_share_off_DARK_Actions takes nothing returns nothing
+set bj_forLoopAIndex=1
+set bj_forLoopAIndexEnd=12
+loop
+exitwhen bj_forLoopAIndex>bj_forLoopAIndexEnd
+call SetPlayerAllianceBJ(Player(-1+(bj_forLoopAIndex)),ALLIANCE_SHARED_ADVANCED_CONTROL,false,GetTriggerPlayer())
+set bj_forLoopAIndex=bj_forLoopAIndex+1
+endloop
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_share_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_cc_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_cc_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_cc_DARK_Actions takes nothing returns nothing
+call SetPlayerColorBJ(GetTriggerPlayer(),GetPlayerColor(Player(-1+(S2I(SubStringBJ(GetEventPlayerChatString(),5,15))))),true)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_cc_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_cn_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_cn_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_cn_DARK_Actions takes nothing returns nothing
+call SetPlayerName(GetTriggerPlayer(),SubStringBJ(GetEventPlayerChatString(),5,15))
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_cn_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_daddy_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_daddy_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_daddy_on_DARK_Actions takes nothing returns nothing
+set udg_daddy[(1+GetPlayerId(GetTriggerPlayer()))]=true
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_daddy_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_daddy_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_daddy_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_daddy_off_DARK_Actions takes nothing returns nothing
+set udg_daddy[(1+GetPlayerId(GetTriggerPlayer()))]=false
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_daddy_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_refresh_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_refresh_DARK_Func001A takes nothing returns nothing
+call SetUnitLifePercentBJ(GetEnumUnit(),'d')
+call SetUnitManaPercentBJ(GetEnumUnit(),'d')
+call UnitResetCooldown(GetEnumUnit())
+call UnitRemoveBuffsBJ(2,GetEnumUnit())
+endfunction
+function Trig_refresh_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_refresh_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_refresh_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_refresh_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_heal_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_heal_DARK_Func001A takes nothing returns nothing
+call SetUnitLifePercentBJ(GetEnumUnit(),'d')
+endfunction
+function Trig_heal_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_heal_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_heal_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_heal_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_mana_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_mana_DARK_Func001A takes nothing returns nothing
+call SetUnitManaPercentBJ(GetEnumUnit(),'d')
+endfunction
+function Trig_mana_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_mana_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_mana_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_mana_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_hp_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_hp_DARK_Func001A takes nothing returns nothing
+call SetWidgetLife(GetEnumUnit(),S2R(SubStringBJ(GetEventPlayerChatString(),5,15)))
+endfunction
+function Trig_hp_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_hp_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_hp_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_hp_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_kill_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_kill_DARK_Func001A takes nothing returns nothing
+call UnitDamageTargetBJ(GroupPickRandomUnit(GetUnitsOfPlayerAll(GetTriggerPlayer())),GetEnumUnit(),1000000000.,ATTACK_TYPE_HERO,DAMAGE_TYPE_UNKNOWN)
+endfunction
+function Trig_kill_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_kill_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_kill_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_kill_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_invul_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_invul_on_DARK_Func001A takes nothing returns nothing
+call SetUnitInvulnerable(GetEnumUnit(),true)
+endfunction
+function Trig_invul_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_invul_on_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_invul_on_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_invul_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_invul_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_invul_off_DARK_Func001A takes nothing returns nothing
+call SetUnitInvulnerable(GetEnumUnit(),false)
+endfunction
+function Trig_invul_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_invul_off_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_invul_off_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_invul_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_mp_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_mp_DARK_Func001A takes nothing returns nothing
+call SetUnitManaBJ(GetEnumUnit(),S2R(SubStringBJ(GetEventPlayerChatString(),5,15)))
+endfunction
+function Trig_mp_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_mp_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_mp_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_mp_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_size_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_size_DARK_Func001A takes nothing returns nothing
+call SetUnitScalePercent(GetEnumUnit(),S2R(SubStringBJ(GetEventPlayerChatString(),7,17)),S2R(SubStringBJ(GetEventPlayerChatString(),7,17)),S2R(SubStringBJ(GetEventPlayerChatString(),7,17)))
+endfunction
+function Trig_size_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_size_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_size_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_size_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_additem_DARK_Func013A takes nothing returns nothing
+call UnitAddItemByIdSwapped(ChooseRandomItem(GetRandomInt(1,10)),GetEnumUnit())
+call SetItemDroppable(bj_lastCreatedItem,true)
+endfunction
+function Trig_additem_DARK_Func014001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_additem_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_additem_DARK_Func013A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_additem_DARK_Func014001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_lvl_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_lvl_DARK_Func001A takes nothing returns nothing
+call SetHeroLevelBJ(GetEnumUnit(),S2I(SubStringBJ(GetEventPlayerChatString(),6,16)),false)
+endfunction
+function Trig_lvl_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_lvl_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_lvl_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_lvl_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_str_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_str_DARK_Func001A takes nothing returns nothing
+call ModifyHeroStat(0,GetEnumUnit(),2,S2I(SubStringBJ(GetEventPlayerChatString(),6,16)))
+endfunction
+function Trig_str_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_str_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_str_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_str_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_agi_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_agi_DARK_Func001A takes nothing returns nothing
+call ModifyHeroStat(1,GetEnumUnit(),2,S2I(SubStringBJ(GetEventPlayerChatString(),6,16)))
+endfunction
+function Trig_agi_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_agi_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_agi_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_agi_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_int_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_int_DARK_Func001A takes nothing returns nothing
+call ModifyHeroStat(2,GetEnumUnit(),2,S2I(SubStringBJ(GetEventPlayerChatString(),6,16)))
+endfunction
+function Trig_int_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_int_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_int_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_int_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_nocd_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_nocd_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_nocd_on_DARK_Actions takes nothing returns nothing
+set udg_nocd[(1+GetPlayerId(GetTriggerPlayer()))]=true
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_nocd_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_nocd_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_nocd_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_nocd_off_DARK_Actions takes nothing returns nothing
+set udg_nocd[(1+GetPlayerId(GetTriggerPlayer()))]=false
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_nocd_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_noclip_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_noclip_on_DARK_Func001A takes nothing returns nothing
+call SetUnitPathing(GetEnumUnit(),false)
+endfunction
+function Trig_noclip_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_noclip_on_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_noclip_on_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_noclip_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_noclip_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_noclip_off_DARK_Func001A takes nothing returns nothing
+call SetUnitPathing(GetEnumUnit(),true)
+endfunction
+function Trig_noclip_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_noclip_off_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_noclip_off_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_noclip_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_mmax_on_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_mmax_on_DARK_Func001A takes nothing returns nothing
+call SetUnitMoveSpeed(GetEnumUnit(),522.)
+endfunction
+function Trig_mmax_on_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_mmax_on_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_mmax_on_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_mmax_on_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_mmax_off_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_mmax_off_DARK_Func001A takes nothing returns nothing
+call SetUnitMoveSpeed(GetEnumUnit(),GetUnitDefaultMoveSpeed(GetEnumUnit()))
+endfunction
+function Trig_mmax_off_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_mmax_off_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_mmax_off_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_mmax_off_DARK_Func002001001)),"|cffffcc00Cheat Disabled|r")
+endfunction
+function Trig_ms_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_ms_DARK_Func001A takes nothing returns nothing
+call SetUnitMoveSpeed(GetEnumUnit(),S2R(SubStringBJ(GetEventPlayerChatString(),5,15)))
+endfunction
+function Trig_ms_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_ms_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_ms_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_ms_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_hero_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_hero_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_hero_DARK_Actions takes nothing returns nothing
+call ReviveHeroLoc(GetRevivableUnit(),GetRectCenter(bj_mapInitialPlayableArea),false)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_hero_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_sp_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_sp_DARK_Func001A takes nothing returns nothing
+call ModifyHeroSkillPoints(GetEnumUnit(),2,S2I(SubStringBJ(GetEventPlayerChatString(),5,15)))
+endfunction
+function Trig_sp_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_sp_DARK_Actions takes nothing returns nothing
+call ForGroupBJ(GetUnitsSelectedAll(GetTriggerPlayer()),function Trig_sp_DARK_Func001A)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_sp_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_cooldowns_DARK_Conditions takes nothing returns boolean
+return(udg_nocd[(1+GetPlayerId(GetOwningPlayer(GetTriggerUnit())))])
+endfunction
+function Trig_cooldowns_DARK_Actions takes nothing returns nothing
+call SetUnitManaPercentBJ(GetTriggerUnit(),'d')
+call UnitResetCooldown(GetTriggerUnit())
+endfunction
+function Trig_daddy_DARK_Func001C takes nothing returns boolean
+return(udg_daddy[(1+GetPlayerId(GetOwningPlayer(GetTriggerUnit())))])
+endfunction
+function Trig_daddy_DARK_Func002C takes nothing returns boolean
+return(udg_daddy[(1+GetPlayerId(GetOwningPlayer(GetAttacker())))])
+endfunction
+function Trig_daddy_DARK_Actions takes nothing returns nothing
+if(Trig_daddy_DARK_Func001C())then
+call SetUnitLifePercentBJ(GetTriggerUnit(),'d')
+endif
+if(Trig_daddy_DARK_Func002C())then
+call SetUnitLifePercentBJ(GetTriggerUnit(),'d')
+call UnitDamageTargetBJ(GetAttacker(),GetTriggerUnit(),1000000000.,ATTACK_TYPE_HERO,DAMAGE_TYPE_UNKNOWN)
+endif
+endfunction
+function Trig_clear_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_clear_DARK_Func001001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_clear_DARK_Actions takes nothing returns nothing
+call ClearTextMessagesBJ(GetPlayersMatching(Condition(function Trig_clear_DARK_Func001001001)))
+endfunction
+function Trig_list_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_list_DARK_Func001Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_list_DARK_Func001C takes nothing returns boolean
+return(S2I(SubStringBJ(GetEventPlayerChatString(),7,17))==1)
+endfunction
+function Trig_list_DARK_Func002Func001001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_list_DARK_Func002C takes nothing returns boolean
+return(S2I(SubStringBJ(GetEventPlayerChatString(),7,17))==2)
+endfunction
+function Trig_list_DARK_Func003Func001001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_list_DARK_Func003C takes nothing returns boolean
+return(S2I(SubStringBJ(GetEventPlayerChatString(),7,17))==3)
+endfunction
+function Trig_list_DARK_Func004Func001001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_list_DARK_Func004C takes nothing returns boolean
+return(S2I(SubStringBJ(GetEventPlayerChatString(),7,17))==4)
+endfunction
+function Trig_list_DARK_Actions takes nothing returns nothing
+if(Trig_list_DARK_Func001C())then
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_list_DARK_Func001Func002001001)),"TRIGSTR_053")
+endif
+if(Trig_list_DARK_Func002C())then
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_list_DARK_Func002Func001001001)),"TRIGSTR_054")
+endif
+if(Trig_list_DARK_Func003C())then
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_list_DARK_Func003Func001001001)),"TRIGSTR_055")
+endif
+if(Trig_list_DARK_Func004C())then
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_list_DARK_Func004Func001001001)),"TRIGSTR_056")
+endif
+endfunction
+function Trig_gogo_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_gogo_DARK_Actions takes nothing returns nothing
+set udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))]=true
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_gogo_DARK_Func002001001)),"|cffffcc00Cheats Enabled|r")
+call DoNotSaveReplay()
+endfunction
+function Trig_day_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_day_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_day_DARK_Actions takes nothing returns nothing
+call SetTimeOfDay(6.)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_day_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_night_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_night_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_night_DARK_Actions takes nothing returns nothing
+call SetTimeOfDay(18.)
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_night_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_gm_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_gm_DARK_Func002001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_gm_DARK_Actions takes nothing returns nothing
+call DisplayTextToForce(bj_FORCE_ALL_PLAYERS,SubStringBJ(GetEventPlayerChatString(),5,55))
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_gm_DARK_Func002001001)),"|cffffcc00Cheat Enabled|r")
+endfunction
+function Trig_end_DARK_Conditions takes nothing returns boolean
+return(udg_cheater[(1+GetPlayerId(GetTriggerPlayer()))])
+endfunction
+function Trig_end_DARK_Func001001001 takes nothing returns boolean
+return(GetFilterPlayer()==GetTriggerPlayer())
+endfunction
+function Trig_end_DARK_Actions takes nothing returns nothing
+call DisplayTextToForce(GetPlayersMatching(Condition(function Trig_end_DARK_Func001001001)),"|cffffcc00Cheat Enabled|r")
+call TriggerSleepAction(5.)
+call EndGame(false)
+endfunction

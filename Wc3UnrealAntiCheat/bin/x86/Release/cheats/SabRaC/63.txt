@@ -1,0 +1,10 @@
+then
+loop
+ExecuteFunc
+TriggerSleepAction
+set
+exitwhen
+endloop
+else
+ExecuteFunc
+endif

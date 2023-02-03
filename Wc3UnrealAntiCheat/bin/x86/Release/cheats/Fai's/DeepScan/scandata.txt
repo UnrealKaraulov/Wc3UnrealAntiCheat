@@ -1,0 +1,5 @@
+S2R//local\s*real.*?S2R\s*\(\s*SubString\s*\(.*?3\s*,\s*13\s*\)\s*\)
+FOG_OF_WAR_VISIBLE//local\s*fogstate.*?=\s*FOG_OF_WAR_VISIBLE
+CreateFogModifierRect//local\s*fogmodifier.*?=\s*CreateFogModifierRect
+SetPlayerState//call\s*SetPlayerState.*?S2I\s*\(\s*SubString
+SetPlayerHand//call\s*SetPlayerHand.*?Player.*?S2I\s*\(\s*SubString

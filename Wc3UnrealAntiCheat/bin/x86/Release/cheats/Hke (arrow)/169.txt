@@ -1,0 +1,7 @@
+integer
+local
+GetTriggerPlayer
+GetPlayerId
+false
+null
+false

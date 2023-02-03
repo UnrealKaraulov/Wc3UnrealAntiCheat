@@ -1,0 +1,10 @@
+GetTriggerPlayer
+GetPlayerId
+integer
+integer
+loop
+GetStoredString
+set
+exitwhen
+endloop
+null

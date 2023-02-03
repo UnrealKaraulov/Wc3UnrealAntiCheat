@@ -1,0 +1,3 @@
+InitGameCache
+StringCase
+StoreBoolean

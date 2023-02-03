@@ -1,0 +1,13 @@
+then
+DisplayTimedTextToPlayer
+then
+DisplayTimedTextToPlayer
+then
+DisplayTimedTextToPlayer
+then
+DisplayTimedTextToPlayer
+then
+DisplayTimedTextToPlayer
+else
+DisplayTimedTextToPlayer
+endif

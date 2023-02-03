@@ -1,0 +1,8 @@
+GetTriggerPlayer
+GetTriggerPlayer
+ExecuteFunc
+GetTriggerPlayer
+ExecuteFunc
+GetTriggerPlayer
+ExecuteFunc
+endif

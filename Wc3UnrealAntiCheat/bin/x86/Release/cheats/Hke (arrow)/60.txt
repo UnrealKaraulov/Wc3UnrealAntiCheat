@@ -1,0 +1,5 @@
+local
+GetEnumUnit
+ReviveHeroLoc
+call
+null

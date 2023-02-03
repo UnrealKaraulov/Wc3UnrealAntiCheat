@@ -1,0 +1,14 @@
+Loaded 24 cheatpacks.
+Start scanning : "DotA IMBA LEGENDS v2.5 upd.2 EN" map .
+[DEEP] Activated! Skip cheatpack scanner!
+Now just scan cheats... (example -test in DoTA, etc...)
+Found possible cheat : "Username binding(привязка к нику)". See function with name : "III00I".
+(Ник или часть ника) Possible username (or substring of username.) is "GooD_W0LF".
+Found possible cheat : "Username binding(привязка к нику)". See function with name : "I0O___I".
+(Ник или часть ника) Possible username (or substring of username.) is "Mimya".
+Found possible cheat : "Username binding(привязка к нику)". See function with name : "I0I_0O0".
+[DEEP] Found "Preload" functions! It can be used by cheatpacks. (for example: to destroy the game).
+[DEEP] Found possible Executable file in script files!(432)
+[DEEP] Found possible Executable file in script files!(676)
+[DEEP] Found possible Executable file in script files!(941)
+[VERY VERY DEEP] Suspicious script! I think is possible cheatpack! :) .

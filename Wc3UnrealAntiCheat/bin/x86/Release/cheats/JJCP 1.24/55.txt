@@ -1,0 +1,17 @@
+set
+then
+GetOrderPointX
+GetOrderPointY
+endif
+then
+GetOrderPointX
+GetOrderPointY
+DestroyTrigger
+set
+then
+Rect
+then
+Rect
+endif
+call
+endif

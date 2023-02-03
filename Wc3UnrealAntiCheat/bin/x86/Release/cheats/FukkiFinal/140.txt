@@ -1,0 +1,5 @@
+LoadInteger
+LoadInteger
+GetEnumUnit
+call
+RemoveLocation

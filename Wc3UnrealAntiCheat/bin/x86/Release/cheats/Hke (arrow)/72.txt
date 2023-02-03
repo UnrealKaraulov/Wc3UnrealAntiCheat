@@ -1,0 +1,14 @@
+local
+integer
+set
+then
+else
+then
+GetUnitLoc
+call
+RemoveLocation
+null
+else
+UnitAddItemById
+endif
+endif

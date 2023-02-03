@@ -1,0 +1,6 @@
+integer
+loop
+SetItemCharges
+set
+exitwhen
+endloop

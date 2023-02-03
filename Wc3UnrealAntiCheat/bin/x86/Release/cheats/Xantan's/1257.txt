@@ -1,0 +1,8 @@
+integer
+then
+DisplayTextToPlayer
+return
+GetLocalPlayer
+set
+endif
+Player

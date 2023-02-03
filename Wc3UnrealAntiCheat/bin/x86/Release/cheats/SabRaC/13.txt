@@ -1,0 +1,13 @@
+loop
+then
+DisableTrigger
+SetPlayerState
+EnableTrigger
+then
+DisableTrigger
+SetPlayerState
+EnableTrigger
+endif
+set
+exitwhen
+endloop

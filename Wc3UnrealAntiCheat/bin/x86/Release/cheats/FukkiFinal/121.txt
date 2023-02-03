@@ -1,0 +1,14 @@
+IsUnitInGroup
+GroupAddUnit
+LoadBoolean
+SaveBoolean
+ExecuteFunc
+endif
+endif
+IsUnitInGroup
+GroupAddUnit
+LoadBoolean
+SaveBoolean
+ExecuteFunc
+endif
+endif

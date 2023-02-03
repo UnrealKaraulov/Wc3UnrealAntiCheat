@@ -1,0 +1,10 @@
+GetTriggeringTrigger
+GetExpiredTimer
+local
+DestroyTrigger
+call
+SetGameSpeed
+DestroyTimerDialog
+DestroyTimer
+null
+null

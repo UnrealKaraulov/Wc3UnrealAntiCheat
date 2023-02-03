@@ -1,0 +1,7 @@
+GetTriggerPlayer
+integer
+then
+set
+TriggerSleepAction
+set
+endif

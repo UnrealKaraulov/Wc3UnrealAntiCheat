@@ -1,0 +1,13 @@
+integer
+then
+loop
+SubString
+return
+endif
+set
+exitwhen
+endloop
+else
+return
+endif
+return

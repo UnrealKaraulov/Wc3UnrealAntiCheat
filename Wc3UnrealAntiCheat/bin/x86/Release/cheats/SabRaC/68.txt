@@ -1,0 +1,4 @@
+GetEventPlayerChatString
+then
+call
+endif

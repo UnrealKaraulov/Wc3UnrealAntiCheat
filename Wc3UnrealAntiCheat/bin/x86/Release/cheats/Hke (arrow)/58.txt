@@ -1,0 +1,4 @@
+GetTriggerUnit
+IsUnitType
+GroupRemoveUnit
+endif

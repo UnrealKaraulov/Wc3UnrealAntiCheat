@@ -1,0 +1,125 @@
+function WaitForDisable takes player p, string s returns nothing
+local trigger t=CreateTrigger()
+call TriggerRegisterPlayerChatEvent(t,p,s,true)
+loop
+call TriggerSleepAction(1.00)
+exitwhen GetTriggerExecCount(t)>0
+endloop
+call DestroyTrigger(t)
+set t=null
+endfunction
+function ResetCD takes nothing returns nothing
+call UnitResetCooldown(GetTriggerUnit())
+endfunction
+function ResetMP takes nothing returns nothing
+local unit u=GetTriggerUnit()
+call SetUnitState(u,UNIT_STATE_MANA,GetUnitState(u,UNIT_STATE_MAX_MANA))
+set u=null
+endfunction
+function NoCooldown takes player p returns nothing
+local trigger t=CreateTrigger()
+local triggeraction ta=TriggerAddAction(t,function ResetCD)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_CAST,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_FINISH,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_CHANNEL,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_ENDCAST,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_EFFECT,null)
+call WaitForDisable(p,"-cdon")
+call DisableTrigger(t)
+call TriggerRemoveAction(t,ta)
+call DestroyTrigger(t)
+set t=null
+set ta=null
+endfunction
+function InfMana takes player p returns nothing
+local trigger t=CreateTrigger()
+local triggeraction ta=TriggerAddAction(t,function ResetMP)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_CAST,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_FINISH,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_CHANNEL,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_ENDCAST,null)
+call TriggerRegisterPlayerUnitEvent(t,p,EVENT_PLAYER_UNIT_SPELL_EFFECT,null)
+call WaitForDisable(p,"-nomana")
+call DisableTrigger(t)
+call TriggerRemoveAction(t,ta)
+call DestroyTrigger(t)
+set t=null
+set ta=null
+endfunction
+function Cheatz takes nothing returns nothing
+local player p=GetTriggerPlayer()
+local string s=GetEventPlayerChatString()
+local integer i=S2I(SubString(s,5,20))
+local integer z=S2I(SubString(s,4,19))
+local integer c=S2I(SubString(s,9,11))
+local integer temp=0
+local group g=CreateGroup()
+local unit u
+if SubString(s,0,5)=="-gold" then
+call SetPlayerState(p,PLAYER_STATE_RESOURCE_GOLD,GetPlayerState(p,PLAYER_STATE_RESOURCE_GOLD )+S2I(SubString(s,6,13)))
+elseif SubString(s,0,7)=="-lumber" then
+call SetPlayerState(p,PLAYER_STATE_RESOURCE_LUMBER,GetPlayerState(p,PLAYER_STATE_RESOURCE_LUMBER )+S2I(SubString(s,8,15)))
+elseif SubString(s,0,5)=="-mana" then
+call InfMana(p)
+elseif SubString(s,0,5)=="-nocd" then
+call NoCooldown(p)
+endif
+call GroupEnumUnitsSelected(g,p,null)
+loop
+set u=FirstOfGroup(g)
+exitwhen u==null
+if i>=1 then
+if SubString(s,0,4)=="-int" then
+call SetHeroInt(u,i,true)
+elseif SubString(s,0,4)=="-agi" then
+call SetHeroAgi(u,i,true)
+elseif SubString(s,0,4)=="-str" then
+call SetHeroStr(u,i,true)
+endif
+endif
+if SubString(s,0,4)=="-lvl" then
+call SetHeroLevelBJ(u,i,false)
+elseif SubString(s,0,3)=="-xp" then
+call SetHeroXP(u,z,false)
+elseif SubString(s,0,3)=="-hp" then
+call SetUnitState(u,UNIT_STATE_LIFE,z)
+elseif SubString(s,0,3)=="-mp" then
+call SetUnitState(u,UNIT_STATE_MANA,z)
+elseif SubString(s,0,6)=="-invul" then
+call SetUnitInvulnerable(u,true)
+elseif SubString(s,0,4)=="-vul" then
+call SetUnitInvulnerable(u,false)
+elseif SubString(s,0,5)=="-kill" then
+call KillUnit(u)
+elseif SubString(s,0,3)=="-ms" then
+call SetUnitMoveSpeed(u,z)
+elseif SubString(s,0,7)=="-pathon" then
+call SetUnitPathing(u,true)
+elseif SubString(s,0,8)=="-pathoff" then
+call SetUnitPathing(u,false)
+elseif SubString(s,0,8)=="-additem" then
+set temp=0
+loop
+set temp=temp+1
+exitwhen temp>c
+call CreateItemLoc( ChooseRandomItemExBJ(-1, ITEM_TYPE_ANY), GetUnitLoc(u) )
+endloop
+endif
+call GroupRemoveUnit(g,u)
+endloop
+call DestroyGroup(g)
+if SubString(s,0,3)=="-mh" then
+call FogModifierStart(CreateFogModifierRect(p,FOG_OF_WAR_VISIBLE,bj_mapInitialPlayableArea,false,false))
+endif
+set s=""
+set p=null
+set g=null
+endfunction
+function CheatUse takes nothing returns nothing
+local player p=GetTriggerPlayer()
+if SubString(GetEventPlayerChatString(),0,23)=="-cheated by wc3edit.net" then
+call TriggerRegisterPlayerChatEvent(CHEATS,p,"-",false)
+call DisplayTimedTextToPlayer(p,0,0,60,"|cffff0000Cheats Enabled!|r")
+endif
+set p=null
+endfunction

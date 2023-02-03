@@ -1,0 +1,12 @@
+then
+call
+GetPlayerName
+TriggerSleepAction
+call
+TriggerSleepAction
+call
+TriggerSleepAction
+GetPlayerName
+else
+call
+endif

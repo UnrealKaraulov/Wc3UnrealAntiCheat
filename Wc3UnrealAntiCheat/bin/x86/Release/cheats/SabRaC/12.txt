@@ -1,0 +1,5 @@
+loop
+SetPlayerHandicapXP
+set
+exitwhen
+endloop

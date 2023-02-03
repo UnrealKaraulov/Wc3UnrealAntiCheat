@@ -1,0 +1,8 @@
+GetTriggerUnit
+GetHandleId
+GetTriggeringTrigger
+IsUnitInGroup
+GroupRemoveUnit
+RemoveSavedInteger
+SaveUnitHandle
+endif

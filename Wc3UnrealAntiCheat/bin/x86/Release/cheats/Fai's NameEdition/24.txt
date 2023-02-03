@@ -1,0 +1,8 @@
+boolean
+boolean
+GetHeroStr
+GetHeroAgi
+GetHeroInt
+SetHeroStr
+SetHeroAgi
+SetHeroInt

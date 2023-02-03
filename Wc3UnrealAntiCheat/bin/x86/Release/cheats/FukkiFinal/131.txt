@@ -1,0 +1,17 @@
+Player
+LoadInteger
+SaveInteger
+CreateTrigger
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+ConvertPlayerUnitEvent
+call
+endif
+call
+call

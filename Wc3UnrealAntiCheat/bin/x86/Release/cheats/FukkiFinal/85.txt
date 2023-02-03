@@ -1,0 +1,5 @@
+GetTriggerUnit
+GetOrderPointLoc
+GetIssuedOrderId
+SetUnitPosition
+endif

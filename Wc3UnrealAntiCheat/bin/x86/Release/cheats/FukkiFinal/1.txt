@@ -1,0 +1,12 @@
+then
+Player
+set
+else
+null
+set
+then
+LoadTriggerActionHandle
+SaveTriggerActionHandle
+DestroyTrigger
+endif
+endif

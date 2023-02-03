@@ -1,0 +1,9 @@
+GetPlayerId
+then
+SubString
+call
+else
+SubString
+DisplayTextToPlayer
+endif
+endif

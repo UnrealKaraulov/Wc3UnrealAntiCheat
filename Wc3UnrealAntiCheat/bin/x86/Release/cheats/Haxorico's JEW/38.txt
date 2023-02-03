@@ -1,0 +1,6 @@
+GetDyingUnit
+GetOwningPlayer
+IsUnitType
+return
+endif
+return

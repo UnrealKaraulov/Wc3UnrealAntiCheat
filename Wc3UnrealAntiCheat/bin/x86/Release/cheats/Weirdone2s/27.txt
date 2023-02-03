@@ -1,0 +1,12 @@
+GetPlayerId
+CreateTrigger
+triggeraction
+TriggerRegisterPlayerUnitEvent
+set
+false
+DisableTrigger
+TriggerRemoveAction
+DestroyTrigger
+set
+null
+null

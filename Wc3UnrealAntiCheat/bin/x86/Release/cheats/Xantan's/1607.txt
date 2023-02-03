@@ -1,0 +1,7 @@
+GetTriggerPlayer
+GetTriggerUnit
+GetOwningPlayer
+GetTriggerPlayer
+GetTriggerPlayer
+DisplayTextToPlayer
+GetTriggeringTrigger

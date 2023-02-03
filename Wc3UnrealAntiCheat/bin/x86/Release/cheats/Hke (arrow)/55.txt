@@ -1,0 +1,7 @@
+local
+local
+FirstOfGroup
+set
+GetItemCharges
+null
+null

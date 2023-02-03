@@ -1,0 +1,15 @@
+GetAttacker
+GetTriggerUnit
+GetOwningPlayer
+GetPlayerId
+GetOwningPlayer
+then
+IsUnitInGroup
+SetWidgetLife
+call
+endif
+endif
+null
+null
+null
+null

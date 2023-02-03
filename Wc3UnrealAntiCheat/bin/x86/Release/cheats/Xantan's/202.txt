@@ -1,0 +1,4 @@
+GetEnumUnit
+GetEnumUnit
+GetEnumUnit
+GetUnitDefaultMoveSpeed

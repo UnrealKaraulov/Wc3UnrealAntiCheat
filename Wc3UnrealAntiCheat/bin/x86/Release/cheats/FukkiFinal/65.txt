@@ -1,0 +1,4 @@
+then
+DialogDestroy
+call
+endif

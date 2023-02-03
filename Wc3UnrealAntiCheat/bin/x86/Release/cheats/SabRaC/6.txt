@@ -1,0 +1,15 @@
+GetStoredString
+StringLength
+integer
+integer
+loop
+SubString
+SubString
+set
+DisplayTimedTextToPlayer
+set
+endif
+endif
+set
+exitwhen
+endloop

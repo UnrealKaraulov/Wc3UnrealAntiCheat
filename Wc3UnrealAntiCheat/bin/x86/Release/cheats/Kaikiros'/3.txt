@@ -1,0 +1,14 @@
+set
+set
+loop
+exitwhen
+then
+set
+set
+GetPlayerName
+call
+else
+call
+endif
+set
+endloop

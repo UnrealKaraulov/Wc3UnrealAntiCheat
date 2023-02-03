@@ -1,0 +1,13 @@
+local
+local
+Player
+boolean
+CreateFogModifierRect
+FogModifierStart
+call
+FogModifierStop
+DestroyFogModifier
+null
+null
+null
+null

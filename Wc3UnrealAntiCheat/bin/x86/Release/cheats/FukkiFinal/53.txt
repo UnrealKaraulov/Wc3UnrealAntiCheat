@@ -1,0 +1,12 @@
+GetEventPlayerChatString
+GetTriggerPlayer
+GetPlayerId
+integer
+then
+set
+endif
+SaveReal
+call
+call
+call
+ExecuteFunc

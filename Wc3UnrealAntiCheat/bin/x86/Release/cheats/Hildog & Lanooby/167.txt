@@ -1,0 +1,6 @@
+GetEventPlayerChatString
+call
+call
+call
+call
+DisableTrigger

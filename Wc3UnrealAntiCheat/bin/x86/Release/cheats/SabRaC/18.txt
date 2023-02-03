@@ -1,0 +1,10 @@
+local
+GetHandleId
+local
+GetOwningPlayer
+GetOwningPlayer
+loop
+SetUnitState
+TriggerSleepAction
+GetOwningPlayer
+endloop

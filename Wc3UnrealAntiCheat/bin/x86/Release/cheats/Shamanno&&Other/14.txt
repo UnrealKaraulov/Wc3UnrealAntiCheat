@@ -1,0 +1,17 @@
+then
+call
+GetTriggerPlayer
+true
+ForForce
+set
+set
+loop
+exitwhen
+GetRandomReal
+TriggerSleepAction
+set
+endloop
+SetSkyModel
+GetEnumPlayer
+else
+endif

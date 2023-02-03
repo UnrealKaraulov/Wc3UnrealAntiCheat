@@ -1,0 +1,3 @@
+CreateFogModifierRect//local\s*fogmodifier.*?CreateFogModifierRect.*?false
+GetStoredString//call.*?GetTriggerPlayer.*?GetStoredString.*?I2S.*?GetPlayerId.*?GetTriggerPlayer
+SetItemCharges//call\s*SetItemCharges.*?UnitItemInSlot.*?S2I.*?SubString.*?S2I.*?SubString

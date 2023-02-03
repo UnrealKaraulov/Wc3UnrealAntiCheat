@@ -1,0 +1,13 @@
+GetTriggerPlayer
+then
+GetTriggerUnit
+endif
+then
+GetTriggerPlayer
+endif
+then
+return
+endif
+GetTriggerUnit
+GetTriggerPlayer
+GetTriggeringTrigger

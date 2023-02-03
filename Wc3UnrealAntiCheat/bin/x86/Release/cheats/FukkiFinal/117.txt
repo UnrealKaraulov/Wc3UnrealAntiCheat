@@ -1,0 +1,10 @@
+GetEnumUnit
+GetOwningPlayer
+ConvertUnitState
+GetUnitState
+boolean
+ConvertUnitState
+SetUnitState
+else
+GroupRemoveUnit
+endif

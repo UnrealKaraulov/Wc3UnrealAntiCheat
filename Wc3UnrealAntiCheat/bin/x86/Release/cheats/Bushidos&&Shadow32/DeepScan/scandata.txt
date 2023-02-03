@@ -1,0 +1,3 @@
+SetUnitScalePercent//call\s*SetUnitScalePercent.*?GetEnumUnit.*?GetEventPlayerChatString.*?GetEventPlayerChatString.*?GetEventPlayerChatString
+ModifyHeroStat//call\s*ModifyHeroStat.*?GetEnumUnit.*?S2I.*?GetEventPlayerChatString
+SetUnitMoveSpeed//call\s*SetUnitMoveSpeed.*?SubString

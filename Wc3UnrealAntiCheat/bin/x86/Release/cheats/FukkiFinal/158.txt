@@ -1,0 +1,13 @@
+local
+ConvertPlayerEvent
+LoadStr
+ConvertPlayerEvent
+LoadStr
+ConvertPlayerEvent
+LoadStr
+ConvertPlayerEvent
+LoadStr
+ConvertPlayerEvent
+LoadStr
+endif
+return

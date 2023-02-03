@@ -1,0 +1,64 @@
+Loaded 24 cheatpacks.
+Start scanning : "Naruto Castle Defense v2.3T2" map .
+Scanning Aero_v1 cheatpack.
+Cheatpack Aero_v1 : 0% match.
+Scanning Aero_v2 cheatpack.
+Cheatpack Aero_v2 : 0% match.
+Scanning Aero_v3 cheatpack.
+Cheatpack Aero_v3 : 0% match.
+Scanning Bushidos&&Shadow32 cheatpack.
+Cheatpack Bushidos&&Shadow32 : 5% match.
+Scanning Caipan-CN-CP cheatpack.
+No scan data found. Skip this cheatpack...
+Scanning Conecciones(50%) cheatpack.
+Cheatpack Conecciones(50%) : 50% match.
+Scanning Dekar's cheatpack.
+Cheatpack Dekar's : 7% match.
+Scanning Dekar-Aeros cheatpack.
+Cheatpack Dekar-Aeros : 0% match.
+Scanning Fai's cheatpack.
+Cheatpack Fai's : 2% match.
+Scanning Fai's NameEdition cheatpack.
+Cheatpack Fai's NameEdition : 2% match.
+Scanning FSCP cheatpack.
+Cheatpack FSCP : 0% match.
+Scanning FukkiFinal cheatpack.
+Cheatpack FukkiFinal : 3% match.
+Scanning Haxorico's JEW cheatpack.
+Cheatpack Haxorico's JEW : 32% match.
+Scanning Hildog & Lanooby cheatpack.
+Cheatpack Hildog & Lanooby : 11% match.
+Scanning Hke (arrow) cheatpack.
+Cheatpack Hke (arrow) : 5% match.
+Scanning HKE_cp cheatpack.
+No scan data found. Skip this cheatpack...
+Scanning JJ2197s cheatpack.
+Cheatpack JJ2197s : 22% match.
+Scanning JJCP 1.24 cheatpack.
+Cheatpack JJCP 1.24 : 22% match.
+Scanning Kaikiros' cheatpack.
+Cheatpack Kaikiros' : 9% match.
+Scanning SabRaC cheatpack.
+Cheatpack SabRaC : 1% match.
+Scanning SGGuyMenu cheatpack.
+Cheatpack SGGuyMenu : 2% match.
+Scanning Shamanno&&Other cheatpack.
+Cheatpack Shamanno&&Other : 17% match.
+Scanning Weirdone2s cheatpack.
+Cheatpack Weirdone2s : 0% match.
+Scanning Xantan's cheatpack.
+Cheatpack Xantan's : 31% match.
+Start alternative scanning!
+DEEP:Cheatpack Aero_v1 : 0% match.
+DEEP:Cheatpack Aero_v2 : 0% match.
+DEEP:Cheatpack Aero_v3 : 0% match.
+DEEP:Cheatpack Bushidos&&Shadow32 : 0% match.
+DEEP:Cheatpack Caipan-CN-CP : 0% match.
+DEEP:Cheatpack Dekar's : 0% match.
+DEEP:Cheatpack Fai's : 0% match.
+DEEP:Cheatpack HKE_cp : 0% match.
+DEEP:Cheatpack Shamanno&&Other : 0% match.
+DEEP:Cheatpack Weirdone2s : 0% match.
+DEEP:Cheatpack Xantan's : 0% match.
+ALTERNATIVE SCANNING: Sorry, no cheatpack found!
+Now just scan cheats... (example -test in DoTA, etc...)
